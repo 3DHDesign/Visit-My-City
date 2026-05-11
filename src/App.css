@@ -1,0 +1,217 @@
+
+
+/* =========================
+   GOOGLE FONTS
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+  --primary-dark: #0B1F33;
+  --primary-green: #2D6A4F;
+  --primary-gold: #E9A93B;
+  --soft-bg: #FCFCFA;
+  --soft-sand: #F6F1E9;
+  --text-dark: #1E293B;
+  --text-light: #64748B;
+  --white: #ffffff;
+
+  --container-width: 1400px;
+  --section-padding: 120px;
+}
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--soft-bg);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-dark);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+/* =========================
+   CONTAINERS
+========================= */
+.container-wide {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.container-medium {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* =========================
+   SECTION SPACING
+========================= */
+.section-padding {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-primary {
+  background: var(--primary-dark);
+  color: var(--white);
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--primary-green);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--primary-dark);
+  color: var(--primary-dark);
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar-glass {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+   CARD STYLE
+========================= */
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   CUSTOM SCROLLBAR
+========================= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--soft-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-gold);
+  border-radius: 999px;
+}
+
+/* =========================
+   IMAGE SETTINGS
+========================= */
+img {
+  width: 100%;
+  display: block;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  :root {
+    --section-padding: 90px;
+  }
+
+  .container-wide,
+  .container-medium {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 70px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  .container-wide,
+  .container-medium {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
