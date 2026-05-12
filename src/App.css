@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--soft-bg);
+ 
   color: var(--text-dark);
   overflow-x: hidden;
   line-height: 1.6;
@@ -169,7 +169,7 @@ p {
    IMAGE SETTINGS
 ========================= */
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -213,5 +213,18 @@ a {
   .container-medium {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 42px;
   }
 }
