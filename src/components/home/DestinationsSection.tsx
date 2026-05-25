@@ -1,51 +1,62 @@
-import type { ComponentType } from "react";
-import SlickSlider from "react-slick";
-import { FiArrowUpRight, FiGlobe, FiMapPin } from "react-icons/fi";
-
-const Slider = ((SlickSlider as any).default ?? SlickSlider) as ComponentType<any>;
+import { useState } from "react";
+import {
+  FiArrowUpRight,
+  FiGlobe,
+  FiMapPin,
+  FiNavigation,
+  FiStar,
+} from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 type Destination = {
   name: string;
   country: string;
   description: string;
   image: string;
+  tag: string;
+  route: string;
 };
 
 const inboundDestinations: Destination[] = [
   {
     name: "Kandy",
     country: "Sri Lanka",
-    description: "Sacred temples, culture, lake views, and hill country charm.",
+    tag: "Culture",
+    route: "Temple of Tooth • Lake • Hill Capital",
+    description:
+      "A cultural hill capital with sacred temples, lake views, botanical gardens, and timeless Sri Lankan heritage.",
     image:
-      "https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    name: "Galle Fort",
-    country: "Sri Lanka",
-    description: "Colonial streets, ocean views, boutiques, and heritage walls.",
-    image:
-      "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Ella",
     country: "Sri Lanka",
-    description: "Tea estates, waterfalls, scenic train rides, and mountain views.",
+    tag: "Scenic",
+    route: "Nine Arches • Little Adam’s Peak • Tea Trails",
+    description:
+      "A scenic mountain escape with misty views, tea estates, waterfalls, railways, and slow travel charm.",
     image:
-      "https://images.unsplash.com/photo-1586946138047-8fbdc30504f1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1578590467931-66e4d3b0c960?auto=format&fit=crop&w=1600&q=85",
+  },
+  {
+    name: "Galle Fort",
+    country: "Sri Lanka",
+    tag: "Heritage",
+    route: "Dutch Fort • Lighthouse • Coastal Streets",
+    description:
+      "A coastal heritage city with colonial architecture, ocean views, boutique streets, and relaxed southern charm.",
+    image:
+      "https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Sigiriya",
     country: "Sri Lanka",
-    description: "Ancient rock fortress, history, landscapes, and iconic views.",
+    tag: "Iconic",
+    route: "Rock Fortress • Dambulla • Cultural Triangle",
+    description:
+      "An iconic ancient kingdom surrounded by history, landscapes, cave temples, and unforgettable viewpoints.",
     image:
-      "https://images.unsplash.com/photo-1586613835347-b16d6f2f6b47?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    name: "Nuwara Eliya",
-    country: "Sri Lanka",
-    description: "Tea country, cool weather, colonial charm, and lush gardens.",
-    image:
-      "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1600&q=85",
   },
 ];
 
@@ -53,215 +64,311 @@ const outboundDestinations: Destination[] = [
   {
     name: "Dubai",
     country: "United Arab Emirates",
+    tag: "Luxury",
+    route: "City Skyline • Desert Safari • Shopping",
     description:
-      "Luxury city escapes, skyline views, shopping, and desert experiences.",
+      "A modern city escape with luxury hotels, desert adventures, shopping, family attractions, and skyline views.",
     image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Azerbaijan",
     country: "Azerbaijan",
+    tag: "Culture",
+    route: "Baku • Old City • Mountains",
     description:
-      "Baku city lights, mountain escapes, culture, and Caucasus beauty.",
+      "A charming outbound journey with city lights, old town culture, mountain landscapes, and unique experiences.",
     image:
-      "https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    name: "Japan",
-    country: "Japan",
-    description:
-      "Culture, temples, city lights, food, and unforgettable seasons.",
-    image:
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1596306499317-849023209d79?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Thailand",
     country: "Thailand",
+    tag: "Holiday",
+    route: "Bangkok • Islands • Temples",
     description:
-      "Golden temples, tropical beaches, street food, and island holidays.",
+      "A tropical holiday experience with golden temples, island beaches, street food, nightlife, and family fun.",
     image:
-      "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Singapore",
     country: "Singapore",
+    tag: "Family",
+    route: "Gardens • Sentosa • City Attractions",
     description:
-      "Modern city attractions, shopping, family fun, and urban experiences.",
+      "A clean, modern city getaway with family attractions, shopping, dining, skyline views, and premium comfort.",
     image:
-      "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1600&q=85",
   },
 ];
 
-const sliderSettings = {
-  dots: false,
-  arrows: false,
-  infinite: true,
-  speed: 800,
-  autoplay: true,
-  autoplaySpeed: 3500,
-  pauseOnHover: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
-};
-
-const DestinationCard = ({
-  destination,
-  type,
-}: {
-  destination: Destination;
-  type: "Inbound" | "Outbound";
-}) => {
-  return (
-    <div className="px-3">
-      <div className="group relative h-[430px] overflow-hidden rounded-[34px] bg-[#0B1F33]   transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_90px_rgba(15,23,42,0.2)]">
-        <img
-          src={destination.image}
-          alt={`${destination.name} ${destination.country}`}
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-        />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/95 via-[#0B1F33]/48 to-black/10" />
-
-        <div className="relative z-10 flex h-full flex-col justify-between p-7">
-          <div className="flex items-center justify-between">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/12 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.16em] !text-white/85 ring-1 ring-white/15 backdrop-blur-md">
-              {type === "Inbound" ? (
-                <FiMapPin size={13} className="text-[#E9A93B]" />
-              ) : (
-                <FiGlobe size={13} className="text-[#E9A93B]" />
-              )}
-              {type}
-            </span>
-
-            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white/12 text-white ring-1 ring-white/15 backdrop-blur-md transition-all duration-300 group-hover:bg-[#E9A93B] group-hover:text-[#0B1F33]">
-              <FiArrowUpRight size={18} />
-            </span>
-          </div>
-
-          <div>
-            <h3 className="text-[34px] font-bold leading-tight !text-white">
-              {destination.name}
-            </h3>
-
-            <div className="mt-3 flex items-center gap-2">
-              <FiMapPin size={15} className="text-[#E9A93B]" />
-
-              <p className="text-[14px] font-semibold !text-white/75">
-                {destination.country}
-              </p>
-            </div>
-
-            <p className="mt-5 text-[15px] leading-7 !text-white/75">
-              {destination.description}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const DestinationSliderRow = ({
-  label,
-  title,
-  description,
-  type,
-  destinations,
-}: {
-  label: string;
-  title: string;
-  description: string;
-  type: "Inbound" | "Outbound";
-  destinations: Destination[];
-}) => {
-  return (
-    <div className="mt-20">
-      <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-        <div>
-          <p className="text-[11px] font-bold uppercase tracking-[0.22em] !text-[#E9A93B]">
-            {label}
-          </p>
-
-          <h3 className="mt-2 text-[30px] font-bold !text-[#0B1F33] md:text-[38px]">
-            {title}
-          </h3>
-        </div>
-
-        <p className="max-w-[560px] text-[15px] leading-7 !text-slate-600 md:text-right">
-          {description}
-        </p>
-      </div>
-
-      <Slider {...sliderSettings} className="destination-slider">
-        {destinations.map((destination) => (
-          <DestinationCard
-            key={destination.name}
-            destination={destination}
-            type={type}
-          />
-        ))}
-      </Slider>
-    </div>
-  );
-};
+const tabs = [
+  {
+    key: "sri-lanka",
+    label: "Explore Sri Lanka",
+    icon: FiMapPin,
+    destinations: inboundDestinations,
+  },
+  {
+    key: "world",
+    label: "Explore The World",
+    icon: FiGlobe,
+    destinations: outboundDestinations,
+  },
+];
 
 const DestinationsSection = () => {
+  const [activeTab, setActiveTab] = useState<"sri-lanka" | "world">(
+    "sri-lanka"
+  );
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const currentTab = tabs.find((tab) => tab.key === activeTab) ?? tabs[0];
+  const activeDestination = currentTab.destinations[activeIndex];
+  const ActiveTabIcon = currentTab.icon;
+
+  const handleTabChange = (key: "sri-lanka" | "world") => {
+    setActiveTab(key);
+    setActiveIndex(0);
+  };
+
   return (
-    <section className="relative overflow-hidden bg-[#FCFCFA] py-24 lg:py-32">
-      <div className="pointer-events-none absolute -left-40 top-20 h-[420px] w-[420px] rounded-full bg-[#2D6A4F]/10 blur-3xl" />
-      <div className="pointer-events-none absolute -right-40 bottom-20 h-[420px] w-[420px] rounded-full bg-[#E9A93B]/15 blur-3xl" />
+    <section className="relative overflow-hidden bg-white py-24 lg:py-32">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-gradient-to-b from-[#F8F5EF] to-white" />
+      <div className="pointer-events-none absolute -left-44 top-40 h-[460px] w-[460px] rounded-full bg-[#2D6A4F]/8 blur-3xl" />
+      <div className="pointer-events-none absolute -right-44 bottom-24 h-[460px] w-[460px] rounded-full bg-[#D9B05F]/12 blur-3xl" />
 
       <div className="container-wide relative z-10">
         {/* Header */}
-        <div className="mx-auto max-w-[920px] text-center">
-          <span className="inline-flex items-center justify-center rounded-full border border-[#E9A93B]/30 bg-[#E9A93B]/10 px-5 py-2 text-[11px] font-bold uppercase tracking-[0.24em] !text-[#E9A93B]">
-            Featured Destinations
-          </span>
+        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div>
+            <p className="text-[11px] font-bold uppercase tracking-[0.26em] !text-[#B98525]">
+              Destination Explorer
+            </p>
 
-          <h2 className="mx-auto mt-7 max-w-[860px] text-[36px] font-bold leading-[1.08] !text-[#0B1F33] md:text-[54px] lg:text-[62px]">
-            Featured Destinations
-            <span className="block !text-[#2D6A4F]">
-              for Every Kind of Traveler.
-            </span>
-          </h2>
+            <h2 className="mt-5 text-[38px] font-bold leading-[1.05] !text-[#0B1F33] md:text-[58px]">
+              Discover places with
+              <span className="block !text-[#2D6A4F]">purpose and style.</span>
+            </h2>
+          </div>
 
-          <p className="mx-auto mt-6 max-w-[720px] text-[16px] leading-8 !text-slate-600 md:text-[17px]">
-            Explore Sri Lanka’s iconic cities, coastlines, and hill country, or
-            discover unforgettable international escapes with Visit My City.
+          <p className="max-w-[670px] text-[16px] leading-8 !text-slate-600 md:text-[17px] lg:justify-self-end">
+            Browse handpicked destinations across Sri Lanka and the world. Each
+            destination can be shaped into a private tour, family holiday,
+            honeymoon, group journey, or corporate travel plan.
           </p>
         </div>
 
-        {/* Inbound Slider */}
-        <DestinationSliderRow
-          label="Inbound Travel"
-          title="Explore Sri Lanka"
-          description="Discover cultural cities, coastal heritage, hill country beauty, wildlife, and iconic Sri Lankan experiences."
-          type="Inbound"
-          destinations={inboundDestinations}
-        />
+        {/* Tabs */}
+        <div className="mt-12 inline-flex rounded-full border border-[#E8DED0] bg-[#F8F5EF] p-1.5 shadow-[0_14px_40px_rgba(11,31,51,0.05)]">
+          {tabs.map((tab) => {
+            const Icon = tab.icon;
+            const isActive = activeTab === tab.key;
 
-        {/* Outbound Slider */}
-        <DestinationSliderRow
-          label="Outbound Travel"
-          title="Discover The World"
-          description="Plan overseas holidays, honeymoons, family tours, and international escapes from Sri Lanka."
-          type="Outbound"
-          destinations={outboundDestinations}
-        />
+            return (
+              <button
+                key={tab.key}
+                type="button"
+                onClick={() =>
+                  handleTabChange(tab.key as "sri-lanka" | "world")
+                }
+                className={`inline-flex items-center gap-2 rounded-full px-5 py-3 text-[13px] font-bold transition-all duration-300 ${
+                  isActive
+                    ? "bg-[#0B1F33] !text-white shadow-[0_12px_30px_rgba(11,31,51,0.16)]"
+                    : "!text-[#0B1F33] hover:bg-white"
+                }`}
+              >
+                <Icon
+                  size={16}
+                  className={isActive ? "text-[#E9A93B]" : "text-[#2D6A4F]"}
+                />
+                {tab.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Main destination console */}
+        <div className="mt-8 overflow-hidden rounded-[44px] border border-[#E8DED0] bg-[#F8F5EF] p-4 shadow-[0_30px_100px_rgba(11,31,51,0.09)] lg:p-5">
+          <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+            {/* Big Image Panel */}
+            <div className="relative min-h-[560px] overflow-hidden rounded-[36px] bg-[#0B1F33]">
+              <img
+                src={activeDestination.image}
+                alt={`${activeDestination.name} destination`}
+                className="absolute inset-0 h-full w-full object-cover transition-all duration-700"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/88 via-[#0B1F33]/28 to-transparent" />
+
+              <div className="absolute left-6 top-6 flex items-center gap-2 rounded-full border border-white/20 bg-white/15 px-4 py-2 backdrop-blur-md">
+                <ActiveTabIcon size={15} className="text-[#F7C76D]" />
+                <span className="text-[11px] font-bold uppercase tracking-[0.16em] !text-white">
+                  {currentTab.label}
+                </span>
+              </div>
+
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="max-w-[560px] rounded-[30px] border border-white/18 bg-white/16 p-6 backdrop-blur-xl">
+                  <p className="inline-flex rounded-full bg-[#E9A93B] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] !text-[#0B1F33]">
+                    {activeDestination.tag}
+                  </p>
+
+                  <h3 className="mt-4 text-[42px] font-bold leading-tight !text-white md:text-[56px]">
+                    {activeDestination.name}
+                  </h3>
+
+                  <p className="mt-3 flex items-center gap-2 text-[14px] font-semibold !text-white/75">
+                    <FiMapPin className="text-[#F7C76D]" size={15} />
+                    {activeDestination.country}
+                  </p>
+
+                  <p className="mt-4 text-[15.5px] leading-8 !text-white/75">
+                    {activeDestination.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Control Panel */}
+            <div className="rounded-[36px] bg-white p-5 shadow-[0_18px_55px_rgba(11,31,51,0.05)] md:p-7">
+              <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+                <div>
+                  <p className="text-[11px] font-bold uppercase tracking-[0.22em] !text-[#B98525]">
+                    Choose Destination
+                  </p>
+
+                  <h3 className="mt-3 text-[30px] font-bold leading-tight !text-[#0B1F33] md:text-[38px]">
+                    {activeTab === "sri-lanka"
+                      ? "Sri Lanka highlights"
+                      : "Worldwide favorites"}
+                  </h3>
+                </div>
+
+                <Link
+                  to={activeTab === "sri-lanka" ? "/explore-sri-lanka" : "/explore-the-world"}
+                  className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full border border-[#E3D7C4] bg-[#FCFCFA] px-5 py-3 text-[13px] font-bold !text-[#0B1F33] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#FFF8EA]"
+                >
+                  View All
+                  <FiArrowUpRight size={15} />
+                </Link>
+              </div>
+
+              <div className="mt-7 grid gap-3">
+                {currentTab.destinations.map((destination, index) => {
+                  const isActive = activeIndex === index;
+
+                  return (
+                    <button
+                      key={destination.name}
+                      type="button"
+                      onClick={() => setActiveIndex(index)}
+                      className={`group grid gap-4 rounded-[26px] border p-3 text-left transition-all duration-300 md:grid-cols-[118px_1fr] ${
+                        isActive
+                          ? "border-[#D9B05F]/55 bg-[#FFF8EA] shadow-[0_18px_50px_rgba(11,31,51,0.07)]"
+                          : "border-[#EFE7DA] bg-[#FCFCFA] hover:border-[#D9B05F]/45 hover:bg-white"
+                      }`}
+                    >
+                      <div className="relative h-[96px] overflow-hidden rounded-[20px]">
+                        <img
+                          src={destination.image}
+                          alt={destination.name}
+                          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+
+                        <div className="absolute inset-0 bg-[#0B1F33]/10" />
+                      </div>
+
+                      <div className="flex min-w-0 flex-col justify-center">
+                        <div className="flex items-center gap-2">
+                          <span
+                            className={`rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] ${
+                              isActive
+                                ? "bg-[#0B1F33] !text-white"
+                                : "bg-white !text-[#B98525]"
+                            }`}
+                          >
+                            {destination.tag}
+                          </span>
+
+                          {isActive && (
+                            <span className="flex items-center gap-1 text-[11px] font-bold !text-[#2D6A4F]">
+                              <FiStar size={12} />
+                              Selected
+                            </span>
+                          )}
+                        </div>
+
+                        <h4 className="mt-2 text-[20px] font-bold leading-tight !text-[#0B1F33]">
+                          {destination.name}
+                        </h4>
+
+                        <p className="mt-1 line-clamp-1 text-[13px] font-semibold !text-slate-500">
+                          {destination.route}
+                        </p>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Route Box */}
+              <div className="mt-6 rounded-[30px] border border-[#E8DED0] bg-[#FCFCFA] p-5">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#EEF7F2] text-[#2D6A4F]">
+                    <FiNavigation size={22} />
+                  </div>
+
+                  <div>
+                    <p className="text-[11px] font-bold uppercase tracking-[0.18em] !text-[#B98525]">
+                      Suggested Experience
+                    </p>
+
+                    <h4 className="mt-2 text-[21px] font-bold !text-[#0B1F33]">
+                      {activeDestination.route}
+                    </h4>
+
+                    <p className="mt-3 text-[14px] leading-7 !text-slate-600">
+                      This destination can be added to a custom itinerary based
+                      on guest preferences, duration, hotel category, and travel
+                      purpose.
+                    </p>
+                  </div>
+                </div>
+
+                <Link
+                  to="/contact"
+                  className="mt-5 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#0B1F33] px-7 py-4 text-[14px] font-bold !text-white shadow-[0_16px_40px_rgba(11,31,51,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2D6A4F]"
+                >
+                  Plan This Destination
+                  <FiArrowUpRight size={16} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Small bottom strip */}
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
+          {[
+            "Private tours",
+            "Family holidays",
+            "Corporate journeys",
+          ].map((item) => (
+            <div
+              key={item}
+              className="rounded-[26px] border border-[#E8DED0] bg-white p-5 shadow-[0_14px_40px_rgba(11,31,51,0.04)]"
+            >
+              <p className="flex items-center gap-3 text-[15px] font-bold !text-[#0B1F33]">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#E9A93B]/14 text-[#B98525]">
+                  <FiStar size={16} />
+                </span>
+                {item}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
