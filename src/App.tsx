@@ -12,6 +12,7 @@ import CulturalTriangleTour from "./pages/tours/CulturalTriangleTour";
 import HillCountryTour from "./pages/tours/HillCountryTour";
 import FamilyTour from "./pages/tours/FamilyTour";
 import HoneymoonTour from "./pages/tours/HoneymoonTour";
+import ExploreSriLanka from "./pages/ExploreSriLanka";
 function App() {
   return (
     <>
@@ -28,6 +29,8 @@ function App() {
         <Route path="/explore-sri-lanka/hill-country-tour" element={<HillCountryTour />}/>
         <Route path="/explore-sri-lanka/family-tour" element={<FamilyTour />} />
         <Route path="/explore-sri-lanka/honeymoon-tour" element={<HoneymoonTour />} />
+
+        <Route path="/explore-sri-lanka" element={<ExploreSriLanka />} />
       </Routes>
 
       <Footer />
