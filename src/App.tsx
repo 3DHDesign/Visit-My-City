@@ -9,6 +9,7 @@ import SriLanka6N7DTour from "./pages/tours/SriLanka6N7DTour";
 import Journeys from "./pages/Journeys";
 import SriLanka8N9DTour from "./pages/tours/SriLanka8N9DTour";
 import CulturalTriangleTour from "./pages/tours/CulturalTriangleTour";
+import HillCountryTour from "./pages/tours/HillCountryTour";
 function App() {
   return (
     <>
@@ -31,6 +32,10 @@ function App() {
         <Route
           path="/explore-sri-lanka/cultural-triangle-tour"
           element={<CulturalTriangleTour />}
+        />
+        <Route
+          path="/explore-sri-lanka/hill-country-tour"
+          element={<HillCountryTour />}
         />
       </Routes>
 
