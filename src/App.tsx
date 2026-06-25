@@ -13,6 +13,9 @@ import HillCountryTour from "./pages/tours/HillCountryTour";
 import FamilyTour from "./pages/tours/FamilyTour";
 import HoneymoonTour from "./pages/tours/HoneymoonTour";
 import ExploreSriLanka from "./pages/ExploreSriLanka";
+import Experiences from "./pages/Experiences";
+import ExploreTheWorld from "./pages/ExploreTheWorld";
+import WorldCountryPage from "./pages/world/WorldCountryPage";
 function App() {
   return (
     <>
@@ -31,6 +34,9 @@ function App() {
         <Route path="/explore-sri-lanka/honeymoon-tour" element={<HoneymoonTour />} />
 
         <Route path="/explore-sri-lanka" element={<ExploreSriLanka />} />
+        <Route path="/experiences" element={<Experiences />} />
+        <Route path="/explore-the-world" element={<ExploreTheWorld />} />
+        <Route path="/explore-the-world/:countrySlug" element={<WorldCountryPage />} />
       </Routes>
 
       <Footer />

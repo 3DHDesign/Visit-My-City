@@ -56,45 +56,6 @@ const NAV = {
     ctaPath: "/explore-the-world",
   },
 
-  Experiences: {
-    badge: "✨ Travel Styles",
-    label: "TRAVEL EXPERIENCES",
-    links: [
-      {
-        name: "Luxury Tours",
-        icon: "✨",
-        desc: "Premium stays & private journeys",
-        path: "/experiences/luxury-tours",
-      },
-      {
-        name: "Wildlife & Safari",
-        icon: "🐘",
-        desc: "Yala, Minneriya & nature",
-        path: "/experiences/wildlife",
-      },
-      {
-        name: "Adventure Tours",
-        icon: "🧗",
-        desc: "Trails, hikes & active escapes",
-        path: "/experiences/adventure",
-      },
-      {
-        name: "Honeymoon Trips",
-        icon: "💕",
-        desc: "Romantic curated getaways",
-        path: "/experiences/honeymoon",
-      },
-      {
-        name: "Family Holidays",
-        icon: "👨‍👩‍👧",
-        desc: "Safe, easy & comfortable trips",
-        path: "/experiences/family-tours",
-      },
-    ],
-    cta: "View All Experiences",
-    ctaPath: "/experiences",
-  },
-
   "Explore Sri Lanka": {
     badge: "🌿 Inbound",
     label: "SRI LANKA TOURS",
@@ -163,8 +124,7 @@ const DESKTOP_NAV_ITEMS: DesktopNavItem[] = [
   { type: "link", name: "Home", path: "/" },
   { type: "link", name: "About", path: "/about" },
   { type: "dropdown", name: "Explore The World" },
-  { type: "dropdown", name: "Experiences" },
-  { type: "link", name: "Journeys", path: "/journeys" },
+  { type: "link", name: "Experiences", path: "/experiences" },
   { type: "dropdown", name: "Explore Sri Lanka" },
   { type: "link", name: "Contact", path: "/contact" },
 ];
@@ -179,14 +139,17 @@ const navLinkClass = ({ isActive }: { isActive: boolean }) =>
 function Dropdown({ title, data }: { title: string; data: NavSection }) {
   return (
     <div className="group relative flex h-[72px] items-center">
-      <button className="flex items-center gap-1.5 rounded-xl px-3 py-2 text-[14px] font-medium text-[#0B1F33] transition-all duration-200 hover:bg-[#F6F1E9] hover:text-[#E9A93B]">
+      <Link
+        to={data.ctaPath}
+        className="flex items-center gap-1.5 rounded-xl px-3 py-2 text-[14px] font-medium text-[#0B1F33] transition-all duration-200 hover:bg-[#F6F1E9] hover:text-[#E9A93B]"
+      >
         {title}
 
         <FiChevronDown
           size={14}
           className="mt-px text-[#E9A93B] transition-transform duration-300 group-hover:rotate-180"
         />
-      </button>
+      </Link>
 
       <div className="invisible absolute left-1/2 top-full z-50 w-[300px] -translate-x-1/2 translate-y-4 rounded-2xl border border-slate-100 bg-white opacity-0 shadow-[0_24px_64px_rgba(11,31,51,0.11)] transition-all duration-300 group-hover:visible group-hover:translate-y-1 group-hover:opacity-100">
         <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3">
@@ -461,6 +424,7 @@ const Header = () => {
                               <p className="text-[14px] font-semibold text-[#0B1F33]">
                                 {linkItem.name}
                               </p>
+
                               <p className="text-[11.5px] leading-4 text-slate-400">
                                 {linkItem.desc}
                               </p>
