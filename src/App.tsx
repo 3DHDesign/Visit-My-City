@@ -10,6 +10,8 @@ import Journeys from "./pages/Journeys";
 import SriLanka8N9DTour from "./pages/tours/SriLanka8N9DTour";
 import CulturalTriangleTour from "./pages/tours/CulturalTriangleTour";
 import HillCountryTour from "./pages/tours/HillCountryTour";
+import FamilyTour from "./pages/tours/FamilyTour";
+import HoneymoonTour from "./pages/tours/HoneymoonTour";
 function App() {
   return (
     <>
@@ -19,24 +21,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route
-          path="/explore-sri-lanka/6n-7d-sri-lanka-tour"
-          element={<SriLanka6N7DTour />}
-
-        />
+        <Route path="/explore-sri-lanka/6n-7d-sri-lanka-tour" element={<SriLanka6N7DTour />}/>
         <Route path="/journeys" element={<Journeys />} />
-        <Route
-          path="/explore-sri-lanka/8n-9d-sri-lanka-tour"
-          element={<SriLanka8N9DTour />}
-        />
-        <Route
-          path="/explore-sri-lanka/cultural-triangle-tour"
-          element={<CulturalTriangleTour />}
-        />
-        <Route
-          path="/explore-sri-lanka/hill-country-tour"
-          element={<HillCountryTour />}
-        />
+        <Route path="/explore-sri-lanka/8n-9d-sri-lanka-tour" element={<SriLanka8N9DTour />}/>
+        <Route path="/explore-sri-lanka/cultural-triangle-tour" element={<CulturalTriangleTour />}/>
+        <Route path="/explore-sri-lanka/hill-country-tour" element={<HillCountryTour />}/>
+        <Route path="/explore-sri-lanka/family-tour" element={<FamilyTour />} />
+        <Route path="/explore-sri-lanka/honeymoon-tour" element={<HoneymoonTour />} />
       </Routes>
 
       <Footer />
