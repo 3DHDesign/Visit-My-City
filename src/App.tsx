@@ -16,6 +16,7 @@ import ExploreSriLanka from "./pages/ExploreSriLanka";
 import Experiences from "./pages/Experiences";
 import ExploreTheWorld from "./pages/ExploreTheWorld";
 import WorldCountryPage from "./pages/world/WorldCountryPage";
+import FloatingWhatsApp from "./components/common/FloatingWhatsApp";
 function App() {
   return (
     <>
@@ -38,7 +39,7 @@ function App() {
         <Route path="/explore-the-world" element={<ExploreTheWorld />} />
         <Route path="/explore-the-world/:countrySlug" element={<WorldCountryPage />} />
       </Routes>
-
+      <FloatingWhatsApp />
       <Footer />
     </>
   );
