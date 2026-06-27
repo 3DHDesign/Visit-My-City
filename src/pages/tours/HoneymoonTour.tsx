@@ -11,24 +11,21 @@ import {
   import { Link } from "react-router-dom";
   
   const IMAGES = {
-    hero:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85",
-    card:
-      "https://images.unsplash.com/photo-1578590467931-66e4d3b0c960?auto=format&fit=crop&w=1200&q=85",
-    arrival:
-      "https://images.unsplash.com/photo-1588253865900-bc752d5d1b94?auto=format&fit=crop&w=900&q=85",
-    sigiriya:
-      "https://images.unsplash.com/photo-1586613835346-8b033913e1e5?auto=format&fit=crop&w=900&q=85",
-    kandy:
-      "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=900&q=85",
-    nuwaraEliya:
-      "https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=900&q=85",
-    ella:
-      "https://images.unsplash.com/photo-1578590467931-66e4d3b0c960?auto=format&fit=crop&w=900&q=85",
+    hero: "/images/tours/honeymoon/honeymoon-hero.jpg",
+    card: "/images/tours/honeymoon/honeymoon-private-tour-card.jpg",
+  
+    arrival: "/images/tours/honeymoon/day-01-arrival-welcome.jpg",
+    sigiriya: "/images/tours/honeymoon/day-02-sigiriya-cultural-escape.jpg",
+    kandy: "/images/tours/honeymoon/day-03-kandy-cultural-moments.jpg",
+    nuwaraEliya: "/images/tours/honeymoon/day-04-tea-country-romance.jpg",
+    ellaTrain: "/images/tours/honeymoon/day-05-scenic-journey-ella-train.jpg",
+  
+  
     beach:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85",
-    galle:
-      "https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&w=900&q=85",
+  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85",
+
+    galle: "/images/tours/honeymoon/day-08-galle-coastal-experiences.jpg",
+    departure: "/images/tours/honeymoon/day-09-departure.jpg",
   };
   
   const itinerary = [
@@ -64,32 +61,26 @@ import {
       day: "Day 05",
       title: "Scenic Journey to Ella",
       location: "Nuwara Eliya → Ella",
-      image: IMAGES.ella,
+      image: IMAGES.ellaTrain,
       desc: "Continue to Ella, one of Sri Lanka’s most scenic hill-country destinations. The route can include a scenic train experience, Nine Arches Bridge, Ravana Falls, Little Adam’s Peak, and peaceful viewpoints.",
     },
+    
     {
       day: "Day 06",
-      title: "Ella Leisure & Nature",
-      location: "Ella",
-      image: IMAGES.ella,
-      desc: "Spend a relaxed day in Ella with soft adventure, beautiful views, photo stops, cafés, waterfalls, and optional wellness or nature experiences. This day can be kept light and flexible for couples who prefer a slower pace.",
-    },
-    {
-      day: "Day 07",
       title: "Beach Getaway",
       location: "Ella → Mirissa / Bentota / Unawatuna",
       image: IMAGES.beach,
       desc: "Travel towards Sri Lanka’s southern coastline for a romantic beach stay. Couples can relax by the ocean, enjoy resort facilities, visit Mirissa, Bentota, Unawatuna, or another preferred coastal destination.",
     },
     {
-      day: "Day 08",
+      day: "Day 07",
       title: "Galle Fort & Coastal Experiences",
       location: "Down South",
       image: IMAGES.galle,
       desc: "Enjoy a coastal day with optional experiences such as Galle Fort, Coconut Tree Hill, Secret Beach, Madu River boat ride, turtle hatchery, sunset viewpoints, cafés, and relaxed beach time.",
     },
     {
-      day: "Day 09",
+      day: "Day 08",
       title: "Departure",
       location: "Down South → Airport",
       image: IMAGES.arrival,
@@ -148,53 +139,54 @@ import {
     return (
       <main className="bg-[#FCFCFA]">
         {/* Hero */}
-        <section className="relative overflow-hidden bg-[#0B1F33] pb-24 pt-36">
-          <div className="absolute inset-0">
-            <img
-              src={IMAGES.hero}
-              alt="Honeymoon Sri Lanka Tour"
-              className="h-full w-full object-cover opacity-40"
-            />
-  
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F33] via-[#0B1F33]/88 to-[#0B1F33]/35" />
-          </div>
-  
-          <div className="container-wide relative z-10">
-            <div className="max-w-4xl">
-              <p className="text-[12px] font-bold uppercase tracking-[0.28em] !text-[#E9A93B]">
-                Available On Request
-              </p>
-  
-              <h1 className="mt-5 text-[42px] font-bold leading-[1.06] !text-white md:text-[68px]">
-                Honeymoon Sri Lanka Tour
-              </h1>
-  
-              <p className="mt-6 max-w-2xl text-[17px] leading-8 !text-white/75">
-                A romantic Sri Lanka island getaway designed with private travel,
-                scenic hill country, cultural highlights, beautiful beaches,
-                relaxed pacing, and memorable experiences for couples.
-              </p>
-  
-              <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center gap-3 rounded-full bg-[#E9A93B] px-8 py-4 text-[14px] font-bold !text-[#0B1F33] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
-                >
-                  Plan This Tour
-                  <FiArrowUpRight size={16} />
-                </Link>
-  
-                <a
-                  href="tel:+94114327637"
-                  className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
-                >
-                  <FiPhone size={16} />
-                  Call Us
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section className="relative overflow-hidden pb-24 pt-36">
+  <div className="absolute inset-0">
+    <img
+      src={IMAGES.hero}
+      alt="Honeymoon Sri Lanka Tour"
+      className="h-full w-full object-cover"
+    />
+
+    {/* Light overlay only for text readability */}
+    <div className="absolute inset-0 bg-gradient-to-r from-[#071A2C]/70 via-[#071A2C]/25 to-transparent" />
+  </div>
+
+  <div className="container-wide relative z-10">
+    <div className="max-w-4xl">
+      <p className="text-[12px] font-bold uppercase tracking-[0.28em] !text-[#E9A93B]">
+        Available On Request
+      </p>
+
+      <h1 className="mt-5 text-[42px] font-bold leading-[1.06] !text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.35)] md:text-[68px]">
+        Honeymoon Sri Lanka Tour
+      </h1>
+
+      <p className="mt-6 max-w-2xl text-[17px] leading-8 !text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
+        A romantic Sri Lanka island getaway designed with private travel,
+        scenic hill country, cultural highlights, beautiful beaches,
+        relaxed pacing, and memorable experiences for couples.
+      </p>
+
+      <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+        <Link
+          to="/contact"
+          className="inline-flex items-center justify-center gap-3 rounded-full bg-[#E9A93B] px-8 py-4 text-[14px] font-bold !text-[#0B1F33] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
+        >
+          Plan This Tour
+          <FiArrowUpRight size={16} />
+        </Link>
+
+        <a
+          href="tel:+94114327637"
+          className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
+        >
+          <FiPhone size={16} />
+          Call Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
   
         {/* Facts */}
         <section className="relative z-20 -mt-12">
