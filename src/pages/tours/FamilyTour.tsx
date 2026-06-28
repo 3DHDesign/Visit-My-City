@@ -11,24 +11,17 @@ import {
   import { Link } from "react-router-dom";
   
   const IMAGES = {
-    hero:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85",
-    card:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
-    arrival:
-      "https://images.unsplash.com/photo-1588253865900-bc752d5d1b94?auto=format&fit=crop&w=900&q=85",
-    kandy:
-      "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=900&q=85",
-    nuwaraEliya:
-      "https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=900&q=85",
-    ella:
-      "https://images.unsplash.com/photo-1578590467931-66e4d3b0c960?auto=format&fit=crop&w=900&q=85",
-    wildlife:
-      "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=900&q=85",
-    beach:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85",
-    galle:
-      "https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&w=900&q=85",
+    hero: "/images/tours/family/family-tour-hero.jpg",
+    card: "/images/tours/family/family-private-tour-card.jpg",
+  
+    arrival: "/images/tours/family/day-01-arrival-relaxed-start.jpg",
+    kandy: "/images/tours/family/day-02-kandy-family-journey.jpg",
+    kandyCulture: "/images/tours/family/day-03-kandy-leisure-culture.jpg",
+    nuwaraEliya: "/images/tours/family/day-04-tea-country-nuwara-eliya.jpg",
+    ella: "/images/tours/family/day-05-ella-scenic-experience.jpg",
+    wildlife: "/images/tours/family/day-06-wildlife-soft-adventure.jpg",
+    beach: "/images/tours/family/day-07-beach-relaxation.jpg",
+    galle: "/images/tours/family/day-08-galle-fort-departure.jpg",
   };
   
   const itinerary = [
@@ -50,7 +43,7 @@ import {
       day: "Day 03",
       title: "Kandy Leisure & Culture",
       location: "Kandy",
-      image: IMAGES.kandy,
+      image: IMAGES.kandyCulture,
       desc: "Spend a relaxed day in Kandy with family-friendly sightseeing. The route can include Kandy Lake, Bahirawakanda viewpoint, shopping time, a cultural dance show, gem museum, and soft sightseeing without rushing the children or elderly travelers.",
     },
     {
@@ -142,52 +135,52 @@ import {
       <main className="bg-[#FCFCFA]">
         {/* Hero */}
         <section className="relative overflow-hidden bg-[#0B1F33] pb-24 pt-36">
-          <div className="absolute inset-0">
-            <img
-              src={IMAGES.hero}
-              alt="Family Sri Lanka Tour"
-              className="h-full w-full object-cover opacity-40"
-            />
-  
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F33] via-[#0B1F33]/88 to-[#0B1F33]/35" />
-          </div>
-  
-          <div className="container-wide relative z-10">
-            <div className="max-w-4xl">
-              <p className="text-[12px] font-bold uppercase tracking-[0.28em] !text-[#E9A93B]">
-                Available On Request
-              </p>
-  
-              <h1 className="mt-5 text-[42px] font-bold leading-[1.06] !text-white md:text-[68px]">
-                Family Sri Lanka Tour
-              </h1>
-  
-              <p className="mt-6 max-w-2xl text-[17px] leading-8 !text-white/75">
-                A comfortable Sri Lanka family journey designed with relaxed
-                travel times, kid-friendly sightseeing, cultural experiences,
-                mountain scenery, wildlife options, and beach relaxation.
-              </p>
-  
-              <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center gap-3 rounded-full bg-[#E9A93B] px-8 py-4 text-[14px] font-bold !text-[#0B1F33] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
-                >
-                  Plan This Tour
-                  <FiArrowUpRight size={16} />
-                </Link>
-  
-                <a
-                  href="tel:+94114327637"
-                  className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
-                >
-                  <FiPhone size={16} />
-                  Call Us
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+  <div className="absolute inset-0">
+    <img
+      src={IMAGES.hero}
+      alt="Family Sri Lanka Tour"
+      className="h-full w-full object-cover object-[70%_22%]"
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-r from-[#071A2C]/65 via-[#071A2C]/25 to-transparent" />
+  </div>
+
+  <div className="container-wide relative z-10">
+    <div className="max-w-4xl">
+      <p className="text-[12px] font-bold uppercase tracking-[0.28em] !text-[#E9A93B]">
+        Available On Request
+      </p>
+
+      <h1 className="mt-5 text-[42px] font-bold leading-[1.06] !text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.35)] md:text-[68px]">
+        Family Sri Lanka Tour
+      </h1>
+
+      <p className="mt-6 max-w-2xl text-[17px] leading-8 !text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
+        A comfortable Sri Lanka family journey designed with relaxed
+        travel times, kid-friendly sightseeing, cultural experiences,
+        mountain scenery, wildlife options, and beach relaxation.
+      </p>
+
+      <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+        <Link
+          to="/contact"
+          className="inline-flex items-center justify-center gap-3 rounded-full bg-[#E9A93B] px-8 py-4 text-[14px] font-bold !text-[#0B1F33] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
+        >
+          Plan This Tour
+          <FiArrowUpRight size={16} />
+        </Link>
+
+        <a
+          href="tel:+94114327637"
+          className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
+        >
+          <FiPhone size={16} />
+          Call Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
   
         {/* Facts */}
         <section className="relative z-20 -mt-12">

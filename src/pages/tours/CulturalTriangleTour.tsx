@@ -11,20 +11,21 @@ import {
   import { Link } from "react-router-dom";
   
   const IMAGES = {
-    hero:
-      "https://images.unsplash.com/photo-1586613835346-8b033913e1e5?auto=format&fit=crop&w=1800&q=85",
-    card:
-      "https://images.unsplash.com/photo-1586613835346-8b033913e1e5?auto=format&fit=crop&w=1200&q=85",
+    hero: "/images/tours/cultural-traingle/cultural-triangle-tour-hero.jpg",
+    card: "/images/tours/cultural-traingle/cultural-triangle-private-tour-card.jpg",
+  
     anuradhapura:
-      "https://images.unsplash.com/photo-1588253865900-bc752d5d1b94?auto=format&fit=crop&w=900&q=85",
+      "/images/tours/cultural-traingle/stop-01-anuradhapura-ancient-city.jpg",
     polonnaruwa:
-      "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=900&q=85",
+      "/images/tours/cultural-traingle/stop-02-polonnaruwa-heritage-city.jpg",
     sigiriya:
-      "https://images.unsplash.com/photo-1586613835346-8b033913e1e5?auto=format&fit=crop&w=900&q=85",
+      "/images/tours/cultural-traingle/stop-03-sigiriya-rock-fortress.jpg",
+    pidurangala:
+      "/images/tours/cultural-traingle/stop-04-pidurangala-rock-viewpoint.jpg",
     dambulla:
-      "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=900&q=85",
+      "/images/tours/cultural-traingle/stop-05-dambulla-cave-temple.jpg",
     kandy:
-      "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=900&q=85",
+      "/images/tours/cultural-traingle/optional-kandy-cultural-extension.jpg",
   };
   
   const itinerary = [
@@ -53,7 +54,7 @@ import {
       day: "Stop 04",
       title: "Pidurangala Rock Viewpoint",
       location: "Pidurangala",
-      image: IMAGES.sigiriya,
+      image: IMAGES.pidurangala,
       desc: "Add Pidurangala Rock for a scenic cultural and adventure experience. The climb offers one of the best views of Sigiriya Rock and the surrounding forest landscape, making it ideal for photography and sunrise or sunset experiences.",
     },
     {
@@ -125,13 +126,13 @@ import {
         {/* Hero */}
         <section className="relative overflow-hidden bg-[#0B1F33] pb-24 pt-36">
           <div className="absolute inset-0">
-            <img
-              src={IMAGES.hero}
-              alt="Cultural Triangle Tour Sri Lanka"
-              className="h-full w-full object-cover opacity-40"
-            />
-  
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F33] via-[#0B1F33]/88 to-[#0B1F33]/35" />
+          <img
+  src={IMAGES.hero}
+  alt="Cultural Triangle Tour Sri Lanka"
+  className="h-full w-full object-cover object-[50%_45%]"
+/>
+
+<div className="absolute inset-0 bg-gradient-to-r from-[#071A2C]/70 via-[#071A2C]/30 to-transparent" />
           </div>
   
           <div className="container-wide relative z-10">
