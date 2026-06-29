@@ -44,7 +44,7 @@ const journeys: Journey[] = [
       "A complete Sri Lanka journey with culture, tea country, wildlife, beaches, and coastal experiences.",
     status: "Live",
     image:
-      "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1559038267-bfa6d8d3a160?auto=format&fit=crop&w=1600&q=85",
     path: "/explore-sri-lanka/6n-7d-sri-lanka-tour",
   },
   {
@@ -57,7 +57,7 @@ const journeys: Journey[] = [
       "An extended island journey with culture, scenic routes, safari, beaches, and heritage stops.",
     status: "Custom",
     image:
-      "https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1612862862126-865765df2ded?auto=format&fit=crop&w=1600&q=85",
     path: "/contact",
   },
   {
@@ -70,7 +70,7 @@ const journeys: Journey[] = [
       "A family-friendly outbound package with city experiences, desert adventure, shopping, and premium stays.",
     status: "Custom",
     image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1612873649383-edf91f1cf7fe?auto=format&fit=crop&w=1600&q=85",
     path: "/contact",
   },
   {
@@ -83,7 +83,7 @@ const journeys: Journey[] = [
       "A scenic outbound journey with city lights, old town culture, mountain landscapes, and relaxing holiday moments.",
     status: "Custom",
     image:
-      "https://images.unsplash.com/photo-1596306499317-849023209d79?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1746382321642-8ba017dfde90?auto=format&fit=crop&w=1600&q=85",
     path: "/contact",
   },
 ];

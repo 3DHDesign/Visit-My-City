@@ -26,7 +26,7 @@ const inboundDestinations: Destination[] = [
     description:
       "A cultural hill capital with sacred temples, lake views, botanical gardens, and timeless Sri Lankan heritage.",
     image:
-      "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1665849050430-5e8c16bacf7e?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Ella",
@@ -36,7 +36,7 @@ const inboundDestinations: Destination[] = [
     description:
       "A scenic mountain escape with misty views, tea estates, waterfalls, railways, and slow travel charm.",
     image:
-      "https://images.unsplash.com/photo-1578590467931-66e4d3b0c960?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1704797389230-100a9bbb5b73?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Galle Fort",
@@ -46,7 +46,7 @@ const inboundDestinations: Destination[] = [
     description:
       "A coastal heritage city with colonial architecture, ocean views, boutique streets, and relaxed southern charm.",
     image:
-      "https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1699210375804-7d6547c3b227?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Sigiriya",
@@ -56,7 +56,7 @@ const inboundDestinations: Destination[] = [
     description:
       "An iconic ancient kingdom surrounded by history, landscapes, cave temples, and unforgettable viewpoints.",
     image:
-      "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1612862862126-865765df2ded?auto=format&fit=crop&w=1600&q=85",
   },
 ];
 
@@ -69,7 +69,7 @@ const outboundDestinations: Destination[] = [
     description:
       "A modern city escape with luxury hotels, desert adventures, shopping, family attractions, and skyline views.",
     image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1746731341047-76b2652ea843?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Azerbaijan",
@@ -79,7 +79,7 @@ const outboundDestinations: Destination[] = [
     description:
       "A charming outbound journey with city lights, old town culture, mountain landscapes, and unique experiences.",
     image:
-      "https://images.unsplash.com/photo-1596306499317-849023209d79?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1753706874051-718700368d6b?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Thailand",
@@ -89,7 +89,7 @@ const outboundDestinations: Destination[] = [
     description:
       "A tropical holiday experience with golden temples, island beaches, street food, nightlife, and family fun.",
     image:
-      "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1600&q=85",
+      "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1600&q=85",
   },
   {
     name: "Singapore",

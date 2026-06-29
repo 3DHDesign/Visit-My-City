@@ -39,7 +39,7 @@ const experiences: Experience[] = [
       "Tea estates, misty mountains, waterfalls, scenic train routes, and cool highland stays.",
     icon: FiMap,
     image:
-      "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=85",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nine%20Arch%20Bridge%20in%20Ella.jpg?width=1200",
     size: "small",
   },
   {
@@ -59,7 +59,7 @@ const experiences: Experience[] = [
       "Private escapes, scenic hotels, romantic experiences, and memorable couple travel.",
     icon: FiHeart,
     image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Marawila%20SL%20Beach.jpg?width=1600",
     size: "wide",
   },
   {
@@ -105,7 +105,7 @@ const quickExperiences = [
 
 const ExperiencesSection = () => {
   return (
-    <section className="relative overflow-hidden bg-[#F8F5EF] py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-[#F8F5EF] py-4 lg:py-8">
       {/* soft background */}
       <div className="pointer-events-none absolute -left-36 top-20 h-[420px] w-[420px] rounded-full bg-white/80 blur-3xl" />
       <div className="pointer-events-none absolute -right-40 bottom-20 h-[460px] w-[460px] rounded-full bg-[#D9B05F]/12 blur-3xl" />

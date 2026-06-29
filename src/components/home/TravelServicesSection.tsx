@@ -30,7 +30,7 @@ const services: Service[] = [
       "International and domestic flight booking support for business, leisure, group, and family travel requirements.",
     icon: FiCreditCard,
     image:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85",
+    "https://images.unsplash.com/photo-1537123144747-e43eff2e1040?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     points: [
       "International flight booking",
       "Domestic flight support",
@@ -44,7 +44,7 @@ const services: Service[] = [
       "Comfortable hotel stays, luxury resorts, boutique properties, and corporate accommodation arrangements.",
     icon: FiBriefcase,
     image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
+    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=85",
     points: [
       "Luxury and boutique hotels",
       "Corporate accommodation",
@@ -100,7 +100,7 @@ const services: Service[] = [
       "Meetings, incentives, conferences, exhibitions, corporate groups, and special business travel events.",
     icon: FiUsers,
     image:
-      "https://images.unsplash.com/photo-1515169067865-5387ec356754?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1400&q=85",
     points: [
       "Meetings and conferences",
       "Corporate group travel",
@@ -114,7 +114,7 @@ const services: Service[] = [
       "Professional multilingual guide services for cultural tours, city visits, and destination experiences.",
     icon: FiMapPin,
     image:
-      "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1400&q=85",
     points: [
       "Multilingual guide support",
       "Cultural tour guidance",
@@ -128,7 +128,7 @@ const services: Service[] = [
       "Personalized excursions, day tours, special activities, and curated local experiences.",
     icon: FiArrowUpRight,
     image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85",
+    "https://images.unsplash.com/photo-1517586220462-f5712b9ec531?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     points: [
       "Day tours and activities",
       "Tailor-made excursions",
@@ -150,7 +150,7 @@ const TravelServicesSection = () => {
   const ActiveIcon = activeService.icon;
 
   return (
-    <section className="relative overflow-hidden bg-white py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-white py-4 lg:py-8">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[360px] bg-gradient-to-b from-[#FCFCFA] to-white" />
       <div className="pointer-events-none absolute -left-40 top-32 h-[440px] w-[440px] rounded-full bg-[#2D6A4F]/8 blur-3xl" />
       <div className="pointer-events-none absolute -right-40 bottom-16 h-[440px] w-[440px] rounded-full bg-[#E9A93B]/12 blur-3xl" />
