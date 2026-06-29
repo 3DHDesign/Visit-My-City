@@ -6,12 +6,14 @@ import Hero from "../components/home/Hero";
 import TestimonialsSection from "../components/home/TestimonialsSection";
 import TravelPathsSection from "../components/home/TravelPathsSection";
 import TravelServicesSection from "../components/home/TravelServicesSection";
+import WelcomeSriLankaSection from "../components/home/WelcomeSriLankaSection";
 import WhyChooseSection from "../components/home/WhyChooseSection";
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <WelcomeSriLankaSection />
       <TravelPathsSection />
       <WhyChooseSection/>
       <ExperiencesSection/>

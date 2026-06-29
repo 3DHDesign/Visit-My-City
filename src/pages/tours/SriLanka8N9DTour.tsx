@@ -11,28 +11,20 @@ import {
   import { Link } from "react-router-dom";
   
   const IMAGES = {
-    hero:
-      "https://images.unsplash.com/photo-1586613835346-8b033913e1e5?auto=format&fit=crop&w=1800&q=85",
-    card:
-      "https://images.unsplash.com/photo-1578590467931-66e4d3b0c960?auto=format&fit=crop&w=1200&q=85",
-    colombo:
-      "https://images.unsplash.com/photo-1588253865900-bc752d5d1b94?auto=format&fit=crop&w=900&q=85",
-    sigiriya:
-      "https://images.unsplash.com/photo-1586613835346-8b033913e1e5?auto=format&fit=crop&w=900&q=85",
-    kandy:
-      "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=900&q=85",
-    nuwaraEliya:
-      "https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=900&q=85",
-    ella:
-      "https://images.unsplash.com/photo-1578590467931-66e4d3b0c960?auto=format&fit=crop&w=900&q=85",
-    yala:
-      "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=900&q=85",
-    bentota:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85",
-    galle:
-      "https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&w=900&q=85",
-  };
+    hero: "/images/tours/8days/eight-night-nine-day-tour-hero.jpg",
+    card: "/images/tours/8days/eight-night-nine-day-private-tour-card.jpg",
   
+    colombo: "/images/tours/8days/day-01-arrival-colombo-city-tour.jpg",
+    pinnawala: "/images/tours/8days/day-02-pinnawala-pidurangala-dambulla.jpg",
+    ambuluwawa: "/images/tours/8days/day-03-ambuluwawa-kandy-cultural-experience.jpg",
+    nuwaraEliya: "/images/tours/8days/day-04-peradeniya-tea-country-nuwara-eliya.jpg",
+    ella: "/images/tours/8days/day-05-ella-highlights-journey-to-yala.jpg",
+    yala: "/images/tours/8days/day-06-yala-safari-galle-fort-bentota.jpg",
+    bentota: "/images/tours/8days/day-07-bentota-beach-leisure.jpg",
+    maduRiver: "/images/tours/8days/day-08-madu-river-southern-coast.jpg",
+    departure: "/images/tours/8days/day-09-departure.jpg",
+  };
+ 
   const itinerary = [
     {
       day: "Day 01",
@@ -44,15 +36,15 @@ import {
     {
       day: "Day 02",
       title: "Pinnawala, Pidurangala & Dambulla",
-      location: "Colombo → Pinnawala → Sigiriya → Dambulla → Kandy",
-      image: IMAGES.sigiriya,
+      location: "Colombo → Pinnawala → Pidurangala → Dambulla → Kandy",
+      image: IMAGES.pinnawala,
       desc: "Travel towards the cultural region through Pinnawala Elephant Orphanage. Continue to Pidurangala for beautiful views of the surrounding landscape and Sigiriya Rock, then visit the historic Golden Rock Cave Temple in Dambulla before proceeding to Kandy.",
     },
     {
       day: "Day 03",
       title: "Ambuluwawa & Kandy Cultural Experience",
       location: "Kandy → Gampola → Ambuluwawa → Kandy",
-      image: IMAGES.kandy,
+      image: IMAGES.ambuluwawa,
       desc: "Enjoy a scenic journey towards Gampola and visit the Ambuluwawa multi-religious tower for panoramic views. Return to Kandy for a city tour, Kandy Lake, Bahirawakanda Buddha statue, a traditional cultural dance show, and the Temple of the Sacred Tooth Relic.",
     },
     {
@@ -87,14 +79,14 @@ import {
       day: "Day 08",
       title: "Madu River & Southern Coast Experiences",
       location: "Bentota → Balapitiya → Kosgoda → Bentota",
-      image: IMAGES.galle,
+      image: IMAGES.maduRiver,
       desc: "Enjoy a Madu River boat safari through mangroves and small islands. Visit a sea turtle conservation centre and discover the region’s traditional moonstone mining heritage before returning to Bentota for leisure.",
     },
     {
       day: "Day 09",
       title: "Departure",
       location: "Bentota → Airport",
-      image: IMAGES.colombo,
+      image: IMAGES.departure,
       desc: "Your guide will collect you from the hotel and provide a comfortable transfer to Bandaranaike International Airport for your departure flight.",
     },
   ];
@@ -150,13 +142,13 @@ import {
         {/* Hero */}
         <section className="relative overflow-hidden bg-[#0B1F33] pb-24 pt-36">
           <div className="absolute inset-0">
-            <img
-              src={IMAGES.hero}
-              alt="8 Nights 9 Days Sri Lanka Tour"
-              className="h-full w-full object-cover opacity-40"
-            />
-  
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F33] via-[#0B1F33]/88 to-[#0B1F33]/35" />
+          <img
+  src={IMAGES.hero}
+  alt="8 Nights 9 Days Sri Lanka Tour"
+  className="h-full w-full object-cover object-[50%_45%]"
+/>
+
+<div className="absolute inset-0 bg-gradient-to-r from-[#071A2C]/70 via-[#071A2C]/30 to-transparent" />
           </div>
   
           <div className="container-wide relative z-10">
