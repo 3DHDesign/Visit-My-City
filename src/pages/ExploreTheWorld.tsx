@@ -16,8 +16,8 @@ const IMAGES = {
     "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=85",
   dubai:
     "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85",
-  azerbaijan:
-    "https://images.unsplash.com/photo-1600256005684-3a6b2a5b86cb?auto=format&fit=crop&w=900&q=85",
+    azerbaijan:
+    "https://images.unsplash.com/photo-1743586652972-0f8994efe810?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   thailand:
     "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=900&q=85",
   malaysia:

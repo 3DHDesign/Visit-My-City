@@ -54,19 +54,19 @@ export type WorldPackage = {
         {
           title: "Dubai City Tour",
           image:
-            "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=85",
+            "https://images.unsplash.com/photo-1667592441284-b590021411e3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           desc: "Discover Dubai’s modern skyline, iconic landmarks, shopping districts, and cultural highlights with a comfortable city tour.",
         },
         {
           title: "Desert Safari Experience",
           image:
-            "https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=900&q=85",
+            "https://images.unsplash.com/photo-1597656303066-85eb659aeb29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           desc: "Enjoy a desert safari with dune experiences, sunset views, dinner options, and entertainment depending on the selected package.",
         },
         {
           title: "Luxury & Shopping",
           image:
-            "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=85",
+            "https://images.unsplash.com/photo-1738823744763-1794dddf8bdb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           desc: "Plan shopping, luxury stays, premium dining, and modern city experiences for guests who prefer a polished holiday.",
         },
       ],
@@ -87,12 +87,10 @@ export type WorldPackage = {
       badge: "Outbound Package",
       emoji: "🏔️",
       heroImage:
-        "https://images.unsplash.com/photo-1600256005684-3a6b2a5b86cb?auto=format&fit=crop&w=1800&q=85",
-      cardImage:
-        "https://images.unsplash.com/photo-1600256005684-3a6b2a5b86cb?auto=format&fit=crop&w=1200&q=85",
-      shortDesc:
-        "Discover Baku, mountain routes, old city charm, modern architecture, cultural landmarks, and scenic countryside experiences.",
-      overview:
+  "https://images.unsplash.com/photo-1642856761437-5b5efcb36d81?q=80&w=1091&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",cardImage:
+  "https://images.unsplash.com/photo-1689189044045-7cb0767e5cf1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+shortDesc:
+  "Discover Azerbaijan through Baku city experiences, mountain scenery, cultural landmarks, old town streets, modern architecture, and scenic countryside routes.", overview:
         "Azerbaijan is a strong choice for travelers looking for a unique destination with a blend of modern city life, old town culture, mountain scenery, and memorable photo-friendly routes. Packages can be arranged for families, couples, and groups.",
       route: "Baku, Old City, Gobustan, Gabala & Mountain Routes",
       bestFor: "Couples, families, groups & culture lovers",
@@ -108,22 +106,22 @@ export type WorldPackage = {
       ],
       experiences: [
         {
-          title: "Baku City Experience",
+          title: "Baku City Tour",
           image:
-            "https://images.unsplash.com/photo-1600256005684-3a6b2a5b86cb?auto=format&fit=crop&w=900&q=85",
-          desc: "Explore Baku’s skyline, old city streets, waterfront views, shopping areas, and cultural landmarks.",
+            "https://images.unsplash.com/photo-1753706842889-ba63b4f3ccc1?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Explore Baku’s modern skyline, old city streets, seaside boulevard, cultural landmarks, and vibrant city atmosphere.",
         },
         {
           title: "Mountain Routes",
           image:
-            "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=85",
-          desc: "Add scenic routes such as Gabala or mountain-region experiences for nature, photography, and relaxation.",
+            "https://images.unsplash.com/photo-1539451801758-fc29fa0dc710?q=80&w=957&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Enjoy scenic mountain routes, peaceful landscapes, cool weather, and countryside experiences beyond the city.",
         },
         {
-          title: "Culture & Landmarks",
+          title: "Cultural Landmarks",
           image:
-            "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=85",
-          desc: "Include cultural landmarks, museums, heritage sites, and unique local experiences depending on the package.",
+            "https://images.unsplash.com/photo-1746382320737-5f7fbddb84b7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Discover Azerbaijan’s historic architecture, cultural landmarks, old town streets, and unique local heritage.",
         },
       ],
       includes: [
@@ -143,7 +141,7 @@ export type WorldPackage = {
       badge: "Outbound Package",
       emoji: "🏯",
       heroImage:
-        "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1800&q=85",
+      "https://images.unsplash.com/photo-1642856761437-5b5efcb36d81?q=80&w=1091&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cardImage:
         "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=85",
       shortDesc:
@@ -166,20 +164,20 @@ export type WorldPackage = {
         {
           title: "Bangkok City & Shopping",
           image:
-            "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=900&q=85",
-          desc: "Explore Bangkok’s city attractions, shopping malls, local markets, temples, and entertainment options.",
+            "https://images.unsplash.com/photo-1510380097750-835f6f8e11ea?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Explore Bangkok’s city highlights, shopping malls, street markets, temples, food spots, and vibrant urban experiences.",
         },
         {
           title: "Beach & Island Escapes",
           image:
-            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85",
-          desc: "Add Phuket, Krabi, Pattaya or island routes for beach stays, boat trips, and tropical relaxation.",
+            "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=1139&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Relax with Thailand’s tropical beaches, island stays, blue waters, boat rides, and peaceful coastal holiday moments.",
         },
         {
           title: "Family & Leisure Activities",
           image:
-            "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85",
-          desc: "Plan family-friendly attractions, comfortable transfers, leisure stops, and flexible daily schedules.",
+            "https://images.unsplash.com/photo-1595002336275-78e2643005f3?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Plan family-friendly attractions, leisure activities, sightseeing, theme parks, and comfortable experiences for all ages.",
         },
       ],
       includes: [
@@ -199,9 +197,9 @@ export type WorldPackage = {
       badge: "Outbound Package",
       emoji: "🌴",
       heroImage:
-        "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1800&q=85",
-      cardImage:
-        "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=85",
+  "https://images.unsplash.com/photo-1681814677036-62f86f74a906?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=80&w=1800",
+cardImage:
+  "https://images.unsplash.com/photo-1712601979098-15dccb4d0996?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       shortDesc:
         "Explore Malaysia with Kuala Lumpur, Batu Caves, shopping, family attractions, city tours, culture, and tropical leisure options.",
       overview:
@@ -220,22 +218,22 @@ export type WorldPackage = {
       ],
       experiences: [
         {
-          title: "Kuala Lumpur City Tour",
+          title: "Batu Caves Visit",
           image:
-            "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=85",
-          desc: "Explore Kuala Lumpur’s city landmarks, modern skyline, shopping areas, and cultural attractions.",
+          "https://images.unsplash.com/photo-1681814677030-72ab971ac45b?q=80&w=1046&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Visit the iconic Batu Caves with its golden statue, colourful steps, limestone caves, and cultural atmosphere near Kuala Lumpur.",
         },
         {
-          title: "Batu Caves & Culture",
+          title: "Kuala Lumpur City Tour",
           image:
-            "https://images.unsplash.com/photo-1565967511849-76a60a516170?auto=format&fit=crop&w=900&q=85",
-          desc: "Add Batu Caves and cultural stops for a colorful Malaysia experience with temples, steps, and photo-friendly landmarks.",
+            "https://images.unsplash.com/photo-1581981657871-77c0d8adc84d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Explore Kuala Lumpur’s skyline, city attractions, shopping areas, cultural spots, and modern urban highlights.",
         },
         {
           title: "Family Holiday Experiences",
           image:
-            "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85",
-          desc: "Arrange family-friendly attractions, comfortable transfers, shopping time, and flexible sightseeing plans.",
+            "https://images.unsplash.com/photo-1561568005-90b6540edc29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Plan family-friendly sightseeing, leisure activities, comfortable stays, shopping, dining, and easy holiday moments.",
         },
       ],
       includes: [
@@ -255,9 +253,9 @@ export type WorldPackage = {
       badge: "Outbound Package",
       emoji: "🦁",
       heroImage:
-        "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1800&q=85",
-      cardImage:
-        "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1472148439583-1f4cf81b80e0?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    cardImage:
+      "https://images.unsplash.com/photo-1775306963755-8897be3967bb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       shortDesc:
         "Enjoy Singapore with city attractions, Sentosa, Gardens by the Bay, shopping, family entertainment, and short holiday planning.",
       overview:
@@ -276,22 +274,22 @@ export type WorldPackage = {
       ],
       experiences: [
         {
+          title: "Sentosa Island",
+          image:
+            "https://images.unsplash.com/photo-1644327981167-fbd67b34ba72?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Enjoy Sentosa Island with family attractions, beach time, leisure activities, entertainment, and relaxed holiday experiences.",
+        },
+        {
+          title: "Gardens by the Bay",
+          image:
+            "https://images.unsplash.com/photo-1722704710146-84f7cbce7e94?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Visit Singapore’s iconic gardens, futuristic attractions, floral displays, light shows, and beautifully designed nature spaces.",
+        },
+        {
           title: "Modern City Tour",
           image:
-            "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=85",
-          desc: "Discover Singapore’s clean cityscape, modern landmarks, shopping areas, and iconic attractions.",
-        },
-        {
-          title: "Sentosa & Family Fun",
-          image:
-            "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85",
-          desc: "Add Sentosa, entertainment parks, beaches, and family-friendly experiences based on guest preference.",
-        },
-        {
-          title: "Gardens & Premium Experiences",
-          image:
-            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=85",
-          desc: "Plan scenic attractions, evening views, dining, shopping, and premium city experiences.",
+            "https://images.unsplash.com/photo-1533299346856-b1a85808f2ec?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Explore Singapore’s clean city streets, skyline views, shopping districts, dining spots, cultural areas, and modern attractions.",
         },
       ],
       includes: [
@@ -311,10 +309,10 @@ export type WorldPackage = {
       badge: "Outbound Package",
       emoji: "🕌",
       heroImage:
-        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1800&q=85",
-      cardImage:
-        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=85",
-      shortDesc:
+      "https://images.unsplash.com/photo-1496372412473-e8548ffd82bc?q=80&w=1314&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    cardImage:
+      "https://images.unsplash.com/photo-1463592177119-bab2a00f3ccb?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     shortDesc:
         "Arrange India tours for pilgrimage, culture, shopping, family holidays, heritage sites, city experiences, and custom travel routes.",
       overview:
         "India offers a wide range of travel possibilities including pilgrimage tours, cultural routes, family holidays, city breaks, shopping journeys, and heritage experiences. Packages can be customized according to purpose, destination, group size, and budget.",
@@ -334,20 +332,20 @@ export type WorldPackage = {
         {
           title: "Pilgrimage Tours",
           image:
-            "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=85",
-          desc: "Arrange pilgrimage routes based on religious, cultural, and group travel requirements.",
+            "https://images.unsplash.com/photo-1667374073450-81dfcb5ebfcf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Plan spiritual journeys to India’s sacred temples, holy cities, cultural sites, and meaningful pilgrimage destinations.",
         },
         {
-          title: "Heritage & Culture",
+          title: "Ancient Heritage",
           image:
-            "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=85",
-          desc: "Plan heritage sites, historic cities, cultural landmarks, and memorable local experiences.",
+            "https://images.unsplash.com/photo-1631774933370-d596a344e851?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Explore India’s ancient monuments, historic architecture, royal landmarks, cultural routes, and timeless heritage sites.",
         },
         {
-          title: "Family & Shopping Trips",
+          title: "Shopping & City Experiences",
           image:
-            "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=85",
-          desc: "Create family-friendly and shopping-focused trips with comfortable routes and flexible schedules.",
+            "https://images.unsplash.com/photo-1640181637089-cce4a3040ed2?q=80&w=1187&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Enjoy city tours, local markets, shopping streets, food experiences, and colourful urban moments across India.",
         },
       ],
       includes: [
