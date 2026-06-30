@@ -2,7 +2,14 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const AboutHero = () => {
   return (
-    <section className="relative overflow-hidden bg-[#0B1F33] pt-36 pb-24">
+    <section
+    className="relative overflow-hidden bg-[#0B1F33] pt-36 pb-24"
+    style={{
+      backgroundImage: "url('/images/about/about-hero.jpg')",
+      backgroundSize: "cover",
+      backgroundPosition: "center right",
+    }}
+  >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(233,169,59,0.18),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(45,106,79,0.3),transparent_35%)]" />
 
       <div className="container-wide relative z-10">
