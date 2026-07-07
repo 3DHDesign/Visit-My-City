@@ -12,21 +12,21 @@ import {
   
   const IMAGES = {
     hero:
-      "https://images.unsplash.com/photo-1586613835346-8b033913e1e5?auto=format&fit=crop&w=1800&q=85",
+      "https://images.unsplash.com/photo-1499848144902-af767f6d0c7f?auto=format&fit=crop&w=1800&h=1000&q=85", // wide Sri Lanka scenic shot (tea hills / coastline)
     intro:
-      "https://images.unsplash.com/photo-1578590467931-66e4d3b0c960?auto=format&fit=crop&w=1200&q=85",
+      "REPLACE_WITH_VERIFIED_URL", // general Sri Lanka landscape
     tour8:
-      "https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=900&q=85",
+      "REPLACE_WITH_VERIFIED_URL", // Sigiriya Rock Fortress
     tour6:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85",
+      "REPLACE_WITH_VERIFIED_URL", // Galle Fort / south coast beach
     cultural:
-      "https://images.unsplash.com/photo-1586613835346-8b033913e1e5?auto=format&fit=crop&w=900&q=85",
+      "REPLACE_WITH_VERIFIED_URL", // Dambulla Cave Temple or Anuradhapura ruins
     hill:
-      "https://images.unsplash.com/photo-1578590467931-66e4d3b0c960?auto=format&fit=crop&w=900&q=85",
+      "REPLACE_WITH_VERIFIED_URL", // Nine Arch Bridge, Ella / tea plantations
     family:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85",
+      "REPLACE_WITH_VERIFIED_URL", // family-friendly beach, Sri Lanka coast
     honeymoon:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85",
+      "REPLACE_WITH_VERIFIED_URL", // romantic beach sunset, Sri Lanka
   };
   
   const fixedPackages = [
@@ -114,7 +114,7 @@ import {
               className="h-full w-full object-cover opacity-40"
             />
   
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F33] via-[#0B1F33]/88 to-[#0B1F33]/35" />
+            
           </div>
   
           <div className="container-wide relative z-10">

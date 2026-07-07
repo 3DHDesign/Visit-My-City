@@ -14,19 +14,18 @@ import {
   
   const IMAGES = {
     hero:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85",
+      "https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1800&h=900&q=85",
     luxury:
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=85",
-    wildlife:
-      "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=900&q=85",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&h=600&q=85",
+      wildlife:
+      "https://travellersisle.com/wp-content/uploads/2022/08/Crowded-Yala-national-park.jpg?auto=format&fit=crop&w=900&h=600&q=85", // safari jeep / open plains
     adventure:
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=85",
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&h=600&q=85",
     honeymoon:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85",
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&h=600&q=85",
     family:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85",
+      "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=900&h=600&q=85",
   };
-  
   const experiences = [
     {
       id: "luxury-tours",
