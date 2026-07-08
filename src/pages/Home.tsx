@@ -8,7 +8,7 @@ import TravelPathsSection from "../components/home/TravelPathsSection";
 import TravelServicesSection from "../components/home/TravelServicesSection";
 import VmcMomentsSection from "../components/home/VmcMomentsSection";
 import WelcomeSriLankaSection from "../components/home/WelcomeSriLankaSection";
-import WhyChooseSection from "../components/home/WhyChooseSection";
+// import WhyChooseSection from "../components/home/WhyChooseSection";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
       <WelcomeSriLankaSection />
       <VmcMomentsSection/>
       <TravelPathsSection />
-      <WhyChooseSection/>
+      {/* <WhyChooseSection/> */}
       <ExperiencesSection/>
       <TravelServicesSection/>
       <DestinationsSection/>

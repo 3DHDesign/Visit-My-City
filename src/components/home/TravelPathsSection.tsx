@@ -43,29 +43,25 @@ const TravelPathsSection = () => {
                 alt="International travelers exploring Sri Lanka"
                 className="h-[260px] w-full object-cover transition-transform duration-700 group-hover:scale-105 md:h-[320px]"
               />
+            </div>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/85 via-[#0B1F33]/20 to-transparent" />
-
-              <span className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] !text-[#0B1F33] shadow-lg">
+            <div className="px-3 pb-3 pt-6 md:px-5 md:pb-5">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[#E3D7C4] bg-[#FCFCFA] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] !text-[#0B1F33] shadow-sm">
                 <FiMapPin className="text-[#E9A93B]" size={14} />
                 Inbound Travel
               </span>
 
-              <div className="absolute bottom-5 left-5 right-5">
-                <h3 className="text-[32px] font-bold leading-tight !text-white md:text-[42px]">
-                  Explore Sri Lanka
-                </h3>
+              <h3 className="mt-5 text-[32px] font-bold leading-tight !text-[#0B1F33] md:text-[42px]">
+                Explore Sri Lanka
+              </h3>
 
-                <p className="mt-3 max-w-[560px] text-[15px] leading-7 !text-white/85">
-                  Tailor-made Sri Lanka journeys for international travelers
-                  discovering culture, wildlife, beaches, hill country, heritage,
-                  and authentic local experiences.
-                </p>
-              </div>
-            </div>
+              <p className="mt-3 max-w-[560px] text-[15px] leading-7 !text-slate-600">
+                Tailor-made Sri Lanka journeys for international travelers
+                discovering culture, wildlife, beaches, hill country, heritage,
+                and authentic local experiences.
+              </p>
 
-            <div className="px-3 pb-3 pt-6 md:px-5 md:pb-5">
-              <div className="flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-3">
                 {sriLankaPins.map((pin) => (
                   <span
                     key={pin}
@@ -102,29 +98,25 @@ const TravelPathsSection = () => {
                 alt="Sri Lankan travelers enjoying overseas holidays"
                 className="h-[260px] w-full object-cover transition-transform duration-700 group-hover:scale-105 md:h-[320px]"
               />
+            </div>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/85 via-[#0B1F33]/20 to-transparent" />
-
-              <span className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] !text-[#0B1F33] shadow-lg">
+            <div className="px-3 pb-3 pt-6 md:px-5 md:pb-5">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[#E3D7C4] bg-[#FCFCFA] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] !text-[#0B1F33] shadow-sm">
                 <FiGlobe className="text-[#E9A93B]" size={14} />
                 Outbound Travel
               </span>
 
-              <div className="absolute bottom-5 left-5 right-5">
-                <h3 className="text-[32px] font-bold leading-tight !text-white md:text-[42px]">
-                  Discover The World
-                </h3>
+              <h3 className="mt-5 text-[32px] font-bold leading-tight !text-[#0B1F33] md:text-[42px]">
+                Discover The World
+              </h3>
 
-                <p className="mt-3 max-w-[560px] text-[15px] leading-7 !text-white/85">
-                  Outbound holiday packages for Sri Lankan travelers planning
-                  overseas holidays, honeymoons, business travel, family tours,
-                  and group getaways.
-                </p>
-              </div>
-            </div>
+              <p className="mt-3 max-w-[560px] text-[15px] leading-7 !text-slate-600">
+                Outbound holiday packages for Sri Lankan travelers planning
+                overseas holidays, honeymoons, business travel, family tours,
+                and group getaways.
+              </p>
 
-            <div className="px-3 pb-3 pt-6 md:px-5 md:pb-5">
-              <div className="flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-3">
                 {worldPins.map((pin) => (
                   <span
                     key={pin}
