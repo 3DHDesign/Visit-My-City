@@ -12,6 +12,7 @@ type HeroSlide = {
   type: "Inbound" | "Outbound";
   description: string;
   image: string;
+  mobileImage: string;
 };
 
 const slides: HeroSlide[] = [
@@ -22,7 +23,18 @@ const slides: HeroSlide[] = [
     type: "Inbound",
     description:
       "Explore sacred temples, cultural heritage, misty hills, and timeless Sri Lankan traditions.",
-    image: "/images/kandy-temple-of-tooth-relic.png",
+    image: "/images/kandy-temple-of-tooth-relic.jpg",
+    mobileImage: "/images/kandy-temple-of-tooth-relic-mobile.jpg",
+  },
+  {
+    title: "VMC Fleet",
+    heading: "Travel Sri Lanka In Comfort.",
+    country: "Sri Lanka",
+    type: "Inbound",
+    description:
+      "Enjoy safe, comfortable, and reliable private transport with Visit My City across Sri Lanka.",
+    image: "/images/vmc-fleet-support.jpg",
+    mobileImage: "/images/vmc-fleet-support-mobile.jpg",
   },
   {
     title: "Galle",
@@ -31,7 +43,18 @@ const slides: HeroSlide[] = [
     type: "Inbound",
     description:
       "Walk through colonial streets, oceanfront views, golden sunsets, and southern coastal charm.",
-    image: "/images/galle.png",
+    image: "/images/galle.jpg",
+    mobileImage: "/images/galle-mobile.jpg",
+  },
+  {
+    title: "Tuk Tuk Tour",
+    heading: "Discover Sri Lanka By Tuk Tuk.",
+    country: "Sri Lanka",
+    type: "Inbound",
+    description:
+      "Experience colorful local streets, friendly guides, cultural stops, and authentic Sri Lankan moments.",
+    image: "/images/vmc-tuk-tuk-tour.jpg",
+    mobileImage: "/images/vmc-tuk-tuk-tour-mobile.jpg",
   },
   {
     title: "Dubai",
@@ -40,7 +63,8 @@ const slides: HeroSlide[] = [
     type: "Outbound",
     description:
       "Plan luxury city escapes, shopping tours, family holidays, and unforgettable skyline experiences.",
-    image: "/images/dubai.png",
+    image: "/images/dubai.jpg",
+    mobileImage: "/images/dubai-mobile.jpg",
   },
   {
     title: "Azerbaijan",
@@ -49,7 +73,8 @@ const slides: HeroSlide[] = [
     type: "Outbound",
     description:
       "Discover Baku, mountain landscapes, rich culture, modern cities, and unique Caucasus adventures.",
-    image: "/images/azerbaijan.png",
+    image: "/images/azerbaijan.jpg",
+    mobileImage: "/images/azerbaijan-mobile.jpg",
   },
 ];
 
@@ -75,11 +100,14 @@ const Hero = () => {
             key={slide.title}
             className="relative h-[760px] w-full md:h-screen"
           >
-            <img
-              src={slide.image}
-              alt={`${slide.title} ${slide.country}`}
-              className="h-full w-full object-cover"
-            />
+            <picture className="block h-full w-full">
+              <source media="(max-width: 767px)" srcSet={slide.mobileImage} />
+              <img
+                src={slide.image}
+                alt={`${slide.title} ${slide.country}`}
+                className="h-full w-full object-cover"
+              />
+            </picture>
 
             <div className="absolute inset-0 bg-gradient-to-r from-[#071827]/88 via-[#071827]/58 to-[#071827]/12" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#071827]/45 via-transparent to-[#071827]/20" />
