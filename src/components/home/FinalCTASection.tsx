@@ -12,14 +12,14 @@ import { Link } from "react-router-dom";
 const contactOptions = [
   {
     label: "Call Travel Team",
-    value: "+94 11 432 7637 / 8",
-    href: "tel:+94114327637",
+    value: "0114 600 900",
+    href: "tel:+94 114 600 900",
     icon: FiPhone,
   },
   {
     label: "WhatsApp Inquiry",
     value: "Chat with us",
-    href: "https://wa.me/94766192447",
+    href: "https://wa.me/94766192447?text=Hello%2C%20I%20would%20like%20to%20get%20more%20details%20about%20a%20travel%20plan.",
     icon: FiMessageCircle,
   },
 ];

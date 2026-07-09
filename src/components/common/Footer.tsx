@@ -30,22 +30,23 @@ const sriLankaLinks = [
 ];
 
 const worldLinks = [
-  { label: "Dubai", href: "/explore-the-world" },
-  { label: "Azerbaijan", href: "/explore-the-world" },
-  { label: "Japan", href: "/explore-the-world" },
-  { label: "Thailand", href: "/explore-the-world" },
-  { label: "Singapore", href: "/explore-the-world" },
+  { label: "Dubai", href: "/explore-the-world/dubai" },
+  { label: "Azerbaijan", href: "/explore-the-world/azerbaijan" },
+  { label: "Thailand", href: "/explore-the-world/thailand" },
+  { label: "Malaysia", href: "/explore-the-world/malaysia" },
+  { label: "Singapore", href: "/explore-the-world/singapore" },
+  { label: "India", href: "/explore-the-world/india" },
 ];
 
 const socialLinks = [
   {
     label: "Facebook",
-    href: "#",
+    href: "https://web.facebook.com/visitmycity.travel",
     icon: FiFacebook,
   },
   {
     label: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/visitmycitylk/",
     icon: FiInstagram,
   },
   {
@@ -75,7 +76,11 @@ const Footer = () => {
               </h2>
             </div>
 
-            <PrimaryButton text="Plan Your Trip" href="/contact" variant="gold" />
+            <PrimaryButton
+              text="Plan Your Trip"
+              href="/contact"
+              variant="gold"
+            />
           </div>
         </div>
 
@@ -188,7 +193,7 @@ const Footer = () => {
 
             <div className="mt-6 space-y-4">
               <a
-                href="tel:+94114327637"
+                href="tel:+94114 600 900"
                 className="flex items-start gap-3 rounded-2xl bg-white/[0.08] p-4 transition-all hover:bg-white/[0.12]"
               >
                 <FiPhone className="mt-1 shrink-0 text-[#E9A93B]" size={18} />
@@ -199,7 +204,7 @@ const Footer = () => {
                   </p>
 
                   <p className="mt-1 text-[14px] font-semibold !text-white/75">
-                    +94 11 432 7637 / 8
+                    0114 600 900
                   </p>
                 </div>
               </a>
@@ -263,7 +268,17 @@ const Footer = () => {
 
             <span className="h-1 w-1 rounded-full bg-white/25" />
 
-            <p className="text-[13px] !text-white/45">Designed by 3DH Design</p>
+            <p className="text-[13px] !text-white/45">
+              Designed with <span className="!text-[#E9A93B]">❤️</span> by{" "}
+              <a
+                href="https://3dhdesign.com"
+                target="_blank"
+                rel="noreferrer"
+                className="font-semibold !text-white/60 transition-all hover:!text-[#E9A93B]"
+              >
+                3DH Design
+              </a>
+            </p>
           </div>
         </div>
       </div>

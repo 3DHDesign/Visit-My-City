@@ -2,10 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vmc</title>
+
+    <title>Visit My City | Sri Lanka & World Travel</title>
+
+    <meta
+      name="description"
+      content="Visit My City helps travelers plan Sri Lanka journeys and overseas holidays with flights, hotels, transfers, guides, and complete travel support."
+    />
+
+    <meta
+      name="keywords"
+      content="Visit My City, Sri Lanka travel, Sri Lanka tours, travel agency Sri Lanka, overseas holidays, Dubai travel, Malaysia travel, Sri Lanka travel planner"
+    />
+
+    <meta name="theme-color" content="#0B1F33" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Visit My City | Sri Lanka & World Travel" />
+    <meta
+      property="og:description"
+      content="Plan memorable Sri Lanka journeys and overseas holidays with Visit My City."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/logo.png" />
+
+    <!-- Tab title change -->
+    <title>Visit My City | Sri Lanka & World Travel</title>
+
+    <script>
+      const defaultTitle = "Visit My City | Sri Lanka & World Travel";
+    
+      const awayTitles = [
+        "Don’t miss your next journey ✈️",
+        "Your dream trip is waiting 🌍",
+        "Come back to Visit My City 🌴",
+        "Plan your next escape today ✨",
+      ];
+    
+      let titleInterval;
+      let titleIndex = 0;
+    
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          titleInterval = setInterval(() => {
+            document.title = awayTitles[titleIndex];
+            titleIndex = (titleIndex + 1) % awayTitles.length;
+          }, 1200);
+        } else {
+          clearInterval(titleInterval);
+          titleIndex = 0;
+          document.title = defaultTitle;
+        }
+      });
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
