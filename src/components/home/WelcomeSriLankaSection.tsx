@@ -14,14 +14,14 @@ const WelcomeSriLankaSection = () => {
                 className="h-[420px] w-full rounded-[1.5rem] object-cover sm:h-[520px] lg:h-[580px]"
               />
   
-              <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/30 bg-white/85 p-4 shadow-lg backdrop-blur-md">
+              {/* <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/30 bg-white/85 p-4 shadow-lg backdrop-blur-md">
                 <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-700">
                   Ayubowan
                 </p>
                 <h3 className="mt-1 text-lg font-semibold text-slate-950">
                   A warm Sri Lankan welcome, from the moment you arrive.
                 </h3>
-              </div>
+              </div> */}
             </div>
           </div>
   

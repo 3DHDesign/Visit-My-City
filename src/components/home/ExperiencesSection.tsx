@@ -29,7 +29,7 @@ const experiences: Experience[] = [
       "Yala, Minneriya, elephants, leopards, birdlife, and national park experiences.",
     icon: FiCamera,
     image:
-      "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1200&q=85",
+  "https://images.unsplash.com/photo-1617867644194-550af3ae2c56?q=80&w=1163&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     size: "large",
   },
   {
