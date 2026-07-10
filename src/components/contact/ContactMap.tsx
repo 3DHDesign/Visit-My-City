@@ -8,9 +8,9 @@ const ContactMap = () => {
     "https://www.google.com/maps?q=Visit%20My%20City%20Travels,%20Colombo&ll=6.9222322,79.8735527&z=17&output=embed";
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white pb-20 pt-8 md:pt-10">
       <div className="container-wide">
-        <div className="overflow-hidden rounded-[38px] border border-slate-100 bg-[#FCFCFA] shadow-[0_22px_75px_rgba(15,23,42,0.07)]">
+        <div className="overflow-hidden rounded-[38px] border border-slate-200/80 bg-[#FCFCFA] shadow-[0_12px_25px_rgba(15,23,42,0.08),0_35px_80px_rgba(15,23,42,0.16)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_35px_rgba(15,23,42,0.10),0_45px_95px_rgba(15,23,42,0.20)]">
           <div className="grid lg:grid-cols-[0.75fr_1.25fr]">
             {/* Left Content */}
             <div className="p-8 md:p-10 lg:p-12">
@@ -27,9 +27,9 @@ const ContactMap = () => {
                 Lanka tours and outbound overseas travel planning.
               </p>
 
-              <div className="mt-8 rounded-[24px] border border-[#E9A93B]/20 bg-white p-5 shadow-[0_14px_40px_rgba(15,23,42,0.05)]">
+              <div className="mt-8 rounded-[24px] border border-[#E9A93B]/25 bg-white p-5 shadow-[0_8px_18px_rgba(15,23,42,0.06),0_20px_45px_rgba(15,23,42,0.10)]">
                 <div className="flex gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#E9A93B]/12 text-[#E9A93B]">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#E9A93B]/10 text-[#E9A93B]">
                     <FiMapPin size={20} />
                   </span>
 
@@ -39,7 +39,9 @@ const ContactMap = () => {
                     </h3>
 
                     <p className="mt-2 text-[14px] leading-6 !text-slate-500">
-                      Colombo, Sri Lanka
+                      No. 12, Sri Dhamma Mawatha,
+                      <br />
+                      Colombo 10, Sri Lanka
                     </p>
                   </div>
                 </div>
@@ -66,9 +68,6 @@ const ContactMap = () => {
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen
               />
-
-              {/* Small overlay badge */}
-             
             </div>
           </div>
         </div>
