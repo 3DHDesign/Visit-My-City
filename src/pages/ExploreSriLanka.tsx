@@ -12,21 +12,21 @@ import {
   
   const IMAGES = {
     hero:
-      "https://images.unsplash.com/photo-1499848144902-af767f6d0c7f?auto=format&fit=crop&w=1800&h=1000&q=85", // wide Sri Lanka scenic shot (tea hills / coastline)
-    intro:
-      "REPLACE_WITH_VERIFIED_URL", // general Sri Lanka landscape
-    tour8:
-      "REPLACE_WITH_VERIFIED_URL", // Sigiriya Rock Fortress
-    tour6:
-      "REPLACE_WITH_VERIFIED_URL", // Galle Fort / south coast beach
-    cultural:
-      "REPLACE_WITH_VERIFIED_URL", // Dambulla Cave Temple or Anuradhapura ruins
-    hill:
-      "REPLACE_WITH_VERIFIED_URL", // Nine Arch Bridge, Ella / tea plantations
-    family:
-      "REPLACE_WITH_VERIFIED_URL", // family-friendly beach, Sri Lanka coast
-    honeymoon:
-      "REPLACE_WITH_VERIFIED_URL", // romantic beach sunset, Sri Lanka
+      "https://images.unsplash.com/photo-1499848144902-af767f6d0c7f?auto=format&fit=crop&w=1800&h=1000&q=85",
+  
+    intro: "/images/explore-sri-lanka/intro.jpg",
+  
+    tour8: "/images/explore-sri-lanka/tour8.jpg",
+  
+    tour6: "/images/explore-sri-lanka/tour6.jpg",
+  
+    cultural: "/images/explore-sri-lanka/cultural.jpg",
+  
+    hill: "/images/explore-sri-lanka/hill.jpg",
+  
+    family: "/images/explore-sri-lanka/family.jpg",
+  
+    honeymoon: "/images/explore-sri-lanka/honeymoon.jpg",
   };
   
   const fixedPackages = [

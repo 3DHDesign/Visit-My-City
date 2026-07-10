@@ -102,8 +102,8 @@ const NAV = {
   },
 };
 
-const PHONE_DISPLAY = "+94 11 432 7637 / 8";
-const PHONE_HREF = "tel:+94114327637";
+const PHONE_DISPLAY = "+94 114 600 900";
+const PHONE_HREF = "tel:+94114600900";
 
 type NavData = typeof NAV;
 type NavKey = keyof NavData;

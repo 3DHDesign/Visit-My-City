@@ -4,8 +4,7 @@ import SlickSlider from "react-slick";
 import {
   FiArrowLeft,
   FiArrowRight,
-  FiArrowUpRight,
-  FiMessageCircle,
+  FiArrowUpRight, 
   FiStar,
 } from "react-icons/fi";
 
