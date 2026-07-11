@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 
 const IMAGES = {
   hero: "/images/tours/hill-country/hill-country-tour-hero.jpg",
+  heroMobile: "/images/tours/hill-country/hill-country-tour-hero-mobile.jpg",
   card: "/images/tours/hill-country/hill-country-private-tour-card.jpg",
 
   airport: "/images/tours/hill-country/day-01-arrival-sri-lanka.jpg",
@@ -129,13 +130,17 @@ const HillCountryTour = () => {
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#0B1F33] pb-24 pt-36">
         <div className="absolute inset-0">
-          <img
-            src={IMAGES.hero}
-            alt="Hill Country Tour Sri Lanka"
-            className="h-full w-full object-cover object-[45%_45%]"
-          />
+          <picture className="block h-full w-full">
+            <source media="(max-width: 767px)" srcSet={IMAGES.heroMobile} />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-[#071A2C]/70 via-[#071A2C]/30 to-transparent" />
+            <img
+              src={IMAGES.hero}
+              alt="Cultural Triangle Tour Sri Lanka"
+              className="h-full w-full object-cover object-center md:object-[50%_45%]"
+            />
+          </picture>
+
+          <div className="absolute inset-0 bg-gradient-to-r from-[#071A2C]/80 via-[#071A2C]/45 to-[#071A2C]/15 md:from-[#071A2C]/70 md:via-[#071A2C]/30 md:to-transparent" />
         </div>
 
         <div className="container-wide relative z-10">
@@ -164,7 +169,7 @@ const HillCountryTour = () => {
               </Link>
 
               <a
-                href="tel:+94114327637"
+                href="tel:+94 114 600 900"
                 className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
               >
                 <FiPhone size={16} />
@@ -176,28 +181,39 @@ const HillCountryTour = () => {
       </section>
 
       {/* Facts */}
-      <section className="relative z-20 -mt-12">
+      {/* Tour Facts */}
+      <section className="relative z-20 -mt-10 px-4 md:-mt-14">
         <div className="container-wide">
-          <div className="grid gap-4 rounded-[34px] border border-[#EFE7DA] bg-white p-5 shadow-[0_24px_80px_rgba(11,31,51,0.12)] md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {tourFacts.map((item) => {
               const Icon = item.icon;
 
               return (
                 <div
                   key={item.label}
-                  className="rounded-[26px] bg-[#FCFCFA] p-5"
+                  className="group relative overflow-hidden rounded-[26px] border border-[#E9E1D5] bg-white p-6 shadow-[0_14px_35px_rgba(11,31,51,0.08),0_30px_70px_rgba(11,31,51,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E9A93B]/45 hover:shadow-[0_20px_45px_rgba(11,31,51,0.12),0_40px_90px_rgba(11,31,51,0.12)]"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#E9A93B]/12 text-[#E9A93B]">
-                    <Icon size={21} />
+                  {/* Decorative background */}
+                  <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-[#E9A93B]/10 blur-2xl transition-transform duration-500 group-hover:scale-125" />
+
+                  {/* Top accent */}
+                  <div className="absolute left-6 right-6 top-0 h-[3px] rounded-b-full bg-gradient-to-r from-[#E9A93B] to-[#2D6A4F]" />
+
+                  <div className="relative flex items-start gap-4">
+                    <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-[18px] bg-[#0B1F33] text-[#E9A93B] shadow-[0_10px_25px_rgba(11,31,51,0.20)] transition-transform duration-300 group-hover:scale-105">
+                      <Icon size={22} />
+                    </div>
+
+                    <div className="min-w-0 pt-1">
+                      <p className="text-[10px] font-bold uppercase tracking-[0.2em] !text-[#E9A93B]">
+                        {item.label}
+                      </p>
+
+                      <h3 className="mt-2 text-[16px] font-bold leading-6 !text-[#0B1F33]">
+                        {item.value}
+                      </h3>
+                    </div>
                   </div>
-
-                  <p className="mt-5 text-[12px] font-bold uppercase tracking-[0.16em] !text-slate-400">
-                    {item.label}
-                  </p>
-
-                  <h3 className="mt-2 text-[16px] font-bold leading-6 !text-[#0B1F33]">
-                    {item.value}
-                  </h3>
                 </div>
               );
             })}
@@ -206,7 +222,7 @@ const HillCountryTour = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-24">
+      <section className="py-8">
         <div className="container-wide">
           <div className="grid gap-12 lg:grid-cols-[1fr_0.75fr] lg:items-start">
             <div>
@@ -287,7 +303,7 @@ const HillCountryTour = () => {
       </section>
 
       {/* Itinerary */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-8">
         <div className="container-wide">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-[11px] font-bold uppercase tracking-[0.24em] !text-[#E9A93B]">
@@ -295,60 +311,80 @@ const HillCountryTour = () => {
             </p>
 
             <h2 className="mt-4 text-[36px] font-bold leading-tight !text-[#0B1F33] md:text-[50px]">
-              Hill Country experiences
+              Hill Country Experiences
             </h2>
 
             <p className="mt-5 text-[16px] leading-8 !text-slate-600">
-              This sample route can be adjusted based on the guest’s travel
-              dates, preferred hotel category, flight time, and required beach
-              extension.
+              This sample route can be adjusted based on the guest’s travel dates,
+              preferred hotel category, flight time, and required beach extension.
             </p>
           </div>
 
           <div className="mx-auto mt-14 max-w-6xl">
-            <div className="grid gap-6">
+            <div className="grid gap-7">
               {itinerary.map((item, index) => (
-                <div
+                <article
                   key={item.day}
-                  className="overflow-hidden rounded-[32px] border border-[#EFE7DA] bg-[#FCFCFA] shadow-[0_16px_50px_rgba(11,31,51,0.05)]"
+                  className="group overflow-hidden rounded-[32px] border border-[#E9E1D5] bg-white shadow-[0_8px_20px_rgba(11,31,51,0.06),0_24px_55px_rgba(11,31,51,0.10)] transition-all duration-300 hover:-translate-y-1 hover:border-[#E9A93B]/40 hover:shadow-[0_14px_30px_rgba(11,31,51,0.09),0_34px_75px_rgba(11,31,51,0.14)]"
                 >
                   <div
-                    className={`grid gap-0 lg:grid-cols-[0.82fr_1.18fr] ${
-                      index % 2 === 1 ? "lg:grid-cols-[1.18fr_0.82fr]" : ""
-                    }`}
-                  >
-                    <div
-                      className={`min-h-[260px] ${
-                        index % 2 === 1 ? "lg:order-2" : ""
+                    className={`grid gap-0 lg:grid-cols-[0.82fr_1.18fr] ${index % 2 === 1
+                        ? "lg:grid-cols-[1.18fr_0.82fr]"
+                        : ""
                       }`}
+                  >
+                    {/* Image */}
+                    <div
+                      className={`relative min-h-[260px] overflow-hidden ${index % 2 === 1 ? "lg:order-2" : ""
+                        }`}
                     >
                       <img
                         src={item.image}
                         alt={item.title}
-                        className="h-full min-h-[260px] w-full object-cover"
+                        className="h-full min-h-[260px] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                       />
+
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#071A2C]/45 via-transparent to-transparent" />
+
+                      <span className="absolute left-5 top-5 rounded-full border border-white/20 bg-[#071A2C]/80 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] !text-[#E9A93B] shadow-[0_8px_25px_rgba(0,0,0,0.20)] backdrop-blur-md">
+                        {item.day}
+                      </span>
                     </div>
 
-                    <div className="p-6 md:p-8 lg:p-10">
-                      <p className="text-[12px] font-bold uppercase tracking-[0.16em] !text-[#E9A93B]">
-                        {item.day}
-                      </p>
+                    {/* Content */}
+                    <div
+                      className={`relative flex min-h-[260px] flex-col justify-center overflow-hidden bg-gradient-to-br from-white to-[#FCFAF6] p-6 md:p-8 lg:p-10 ${index % 2 === 1 ? "lg:order-1" : ""
+                        }`}
+                    >
+                      <div className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-[#E9A93B]/10 blur-3xl" />
 
-                      <h3 className="mt-2 text-[28px] font-bold !text-[#0B1F33]">
-                        {item.title}
-                      </h3>
+                      <div className="relative z-10">
+                        <p className="text-[11px] font-bold uppercase tracking-[0.2em] !text-[#E9A93B]">
+                          {item.day}
+                        </p>
 
-                      <p className="mt-3 flex items-center gap-2 text-[14px] font-semibold !text-[#2D6A4F]">
-                        <FiMapPin size={15} />
-                        {item.location}
-                      </p>
+                        <h3 className="mt-2 text-[27px] font-bold leading-tight !text-[#0B1F33] md:text-[28px]">
+                          {item.title}
+                        </h3>
 
-                      <p className="mt-5 text-[15px] leading-8 !text-slate-600">
-                        {item.desc}
-                      </p>
+                        <div className="mt-4 inline-flex max-w-full items-start gap-2 rounded-full border border-[#2D6A4F]/12 bg-[#2D6A4F]/8 px-4 py-2">
+                          <FiMapPin
+                            size={15}
+                            className="mt-0.5 shrink-0 text-[#2D6A4F]"
+                          />
+
+                          <p className="text-[14px] font-semibold leading-5 !text-[#2D6A4F]">
+                            {item.location}
+                          </p>
+                        </div>
+
+                        <p className="mt-5 text-[15px] leading-8 !text-slate-600">
+                          {item.desc}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </article>
               ))}
             </div>
           </div>
@@ -356,7 +392,7 @@ const HillCountryTour = () => {
       </section>
 
       {/* Includes */}
-      <section className="bg-[#FCFCFA] py-24">
+      <section className="bg-[#FCFCFA] py-8">
         <div className="container-wide">
           <div className="grid gap-10 lg:grid-cols-[0.75fr_1fr] lg:items-center">
             <div>
@@ -397,7 +433,7 @@ const HillCountryTour = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-8">
         <div className="container-wide">
           <div className="relative overflow-hidden rounded-[40px] bg-[#0B1F33] p-8 text-center md:p-14">
             <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#E9A93B]/20 blur-3xl" />
@@ -429,11 +465,11 @@ const HillCountryTour = () => {
                 </Link>
 
                 <a
-                  href="tel:+94114327637"
+                  href="tel:+94 114 600 900"
                   className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
                 >
                   <FiPhone size={16} />
-                  Call +94 11 432 7637
+                  Call +94 114 600 900
                 </a>
               </div>
             </div>

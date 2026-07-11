@@ -155,7 +155,7 @@ import {
         </section>
   
         {/* Intro */}
-        <section className="py-24">
+        <section className="py-8">
           <div className="container-wide">
             <div className="grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-center">
               <div>
@@ -204,7 +204,7 @@ import {
         </section>
   
         {/* Fixed Packages */}
-        <section id="tour-packages" className="bg-white py-24">
+        <section id="tour-packages" className="bg-white py-8">
           <div className="container-wide">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-[11px] font-bold uppercase tracking-[0.24em] !text-[#E9A93B]">
@@ -281,7 +281,7 @@ import {
         </section>
   
         {/* Custom Tours */}
-        <section className="bg-[#FCFCFA] py-24">
+        <section className="bg-[#FCFCFA] py-8">
           <div className="container-wide">
             <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-end">
               <div>
@@ -365,7 +365,7 @@ import {
         </section>
   
         {/* Travel Styles */}
-        <section className="bg-white py-24">
+        <section className="bg-white py-8">
           <div className="container-wide">
             <div className="grid gap-6 md:grid-cols-3">
               <div className="rounded-[32px] border border-[#EFE7DA] bg-[#FCFCFA] p-8">
@@ -417,7 +417,7 @@ import {
         </section>
   
         {/* CTA */}
-        <section className="bg-[#FCFCFA] py-24">
+        <section className="bg-[#FCFCFA] py-8">
           <div className="container-wide">
             <div className="relative overflow-hidden rounded-[40px] bg-[#0B1F33] p-8 text-center md:p-14">
               <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#E9A93B]/20 blur-3xl" />
@@ -449,11 +449,11 @@ import {
                   </Link>
   
                   <a
-                    href="tel:+94114327637"
+                    href="tel:+94 114 600 900"
                     className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
                   >
                     <FiPhone size={16} />
-                    Call +94 11 432 7637
+                    Call +94 114 600 900
                   </a>
                 </div>
               </div>
