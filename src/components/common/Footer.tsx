@@ -30,11 +30,11 @@ const sriLankaLinks = [
 ];
 
 const worldLinks = [
-  { label: "Dubai", href: "/explore-the-world/dubai" },
-  { label: "Azerbaijan", href: "/explore-the-world/azerbaijan" },
-  { label: "Thailand", href: "/explore-the-world/thailand" },
   { label: "Malaysia", href: "/explore-the-world/malaysia" },
   { label: "Singapore", href: "/explore-the-world/singapore" },
+  { label: "Thailand", href: "/explore-the-world/thailand" },
+  { label: "Dubai", href: "/explore-the-world/dubai" },
+  { label: "Azerbaijan", href: "/explore-the-world/azerbaijan" },
   { label: "India", href: "/explore-the-world/india" },
 ];
 
@@ -188,14 +188,13 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
+          {/* Contact */}
           <div>
             <h3 className="text-[18px] font-bold !text-white">Contact Us</h3>
 
             <div className="mt-6 space-y-4">
-              <a
-                href="tel:+94114 600 900"
-                className="flex items-start gap-3 rounded-2xl bg-white/[0.08] p-4 transition-all hover:bg-white/[0.12]"
-              >
+              {/* Phone Numbers */}
+              <div className="flex items-start gap-3 rounded-2xl bg-white/[0.08] p-4 transition-all hover:bg-white/[0.12]">
                 <FiPhone className="mt-1 shrink-0 text-[#E9A93B]" size={18} />
 
                 <div>
@@ -203,12 +202,25 @@ const Footer = () => {
                     Phone
                   </p>
 
-                  <p className="mt-1 text-[14px] font-semibold !text-white/75">
-                    0114 600 900
-                  </p>
-                </div>
-              </a>
+                  <div className="mt-1 flex flex-col gap-1.5">
+                    <a
+                      href="tel:+94114600900"
+                      className="text-[14px] font-semibold !text-white/75 transition-colors hover:!text-[#E9A93B]"
+                    >
+                      +94 11 460 0900
+                    </a>
 
+                    <a
+                      href="tel:+94766192447"
+                      className="text-[14px] font-semibold !text-white/75 transition-colors hover:!text-[#E9A93B]"
+                    >
+                      +94 76 619 2447
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Email */}
               <a
                 href="mailto:info@visitmycity.lk"
                 className="flex items-start gap-3 rounded-2xl bg-white/[0.08] p-4 transition-all hover:bg-white/[0.12]"
@@ -226,6 +238,7 @@ const Footer = () => {
                 </div>
               </a>
 
+              {/* Address */}
               <div className="flex items-start gap-3 rounded-2xl bg-white/[0.08] p-4">
                 <FiMapPin className="mt-1 shrink-0 text-[#E9A93B]" size={18} />
 

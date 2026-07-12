@@ -19,56 +19,56 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Anjali Perera",
+    name: "Mr.Lampros",
     role: "Family Holiday Traveler",
     review:
       "Visit My City helped us plan a smooth family holiday. Flights, hotels, transfers, and the full itinerary were handled clearly and professionally.",
     image: "/images/testimonials/1.png",
   },
   {
-    name: "Michael Anderson",
+    name: "Mr.Hardik Verma",
     role: "Sri Lanka Tour Guest",
     review:
       "Our Sri Lanka journey was beautifully organized. Kandy, Ella, Galle, and the coastal experiences were planned with great care and local knowledge.",
     image: "/images/testimonials/2.png",
   },
   {
-    name: "Nadia Silva",
+    name: "Mr.kundan Verma",
     role: "Honeymoon Traveler",
     review:
       "The team understood exactly what we wanted for our honeymoon. The hotel choices, travel plan, and support made everything stress-free.",
     image: "/images/testimonials/3.png",
   },
   {
-    name: "Rahul Mehta",
+    name: "Mr.Mazianis",
     role: "Group Tour Guest",
     review:
       "From airport pickup to hotel stays and sightseeing, the full Sri Lanka tour was well coordinated. The guide and travel arrangements were excellent.",
     image: "/images/testimonials/4.png",
   },
   {
-    name: "Emily Carter",
+    name: "Mrs.Vanshika Verma",
     role: "Sri Lanka Explorer",
     review:
       "The itinerary felt personal and well balanced. We enjoyed the cultural places, local food, scenic views, and friendly support throughout the journey.",
     image: "/images/testimonials/5.png",
   },
   {
-    name: "David Wilson",
+    name: "Mr.Sashank Gupta",
     role: "Private Tour Guest",
     review:
       "Visit My City made our Sri Lanka trip easy from the first message. Transport, guide support, and daily coordination were handled very well.",
     image: "/images/testimonials/6.png",
   },
   {
-    name: "Sarah Mitchell",
+    name: "Mrs.Reena Verma",
     role: "Leisure Traveler",
     review:
       "The team gave us clear travel options and helped arrange the important details. It saved us time and made the holiday planning much easier.",
     image: "/images/testimonials/7.png",
   },
   {
-    name: "Thomas Miller",
+    name: "Mrs.Eirini",
     role: "Cultural Tour Guest",
     review:
       "We loved the mix of heritage, nature, and local experiences. The planning was smooth, and the team was always helpful during the tour.",
