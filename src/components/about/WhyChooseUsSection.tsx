@@ -28,7 +28,7 @@ const cards = [
 
 const WhyChooseUsSection = () => {
   return (
-    <section className="bg-white py-16 lg:py-20">
+    <section className="bg-white py-8 lg:py-12">
       <div className="container-wide">
         <div className="overflow-hidden rounded-[34px] bg-[#0B1F33] shadow-[0_26px_80px_rgba(11,31,51,0.12)]">
           <div className="grid lg:grid-cols-[1.05fr_0.85fr]">

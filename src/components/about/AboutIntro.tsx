@@ -20,7 +20,7 @@ const stats = [
 
 const AboutIntro = () => {
   return (
-    <section id="about-intro" className="bg-[#FCFCFA] py-24">
+    <section id="about-intro" className="bg-[#FCFCFA] py-12">
       <div className="container-wide">
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>

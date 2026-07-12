@@ -54,7 +54,7 @@ import {
   
   const WhatWeDoSection = () => {
     return (
-      <section className="bg-[#FCFCFA] py-24">
+      <section className="bg-[#FCFCFA] py-12">
         <div className="container-wide">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-[11px] font-bold uppercase tracking-[0.24em] !text-[#E9A93B]">
