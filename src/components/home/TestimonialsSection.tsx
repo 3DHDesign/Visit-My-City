@@ -19,59 +19,59 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Mr.Lampros",
-    role: "Family Holiday Traveler",
+    name: "Mr. Lampros",
+    role: "Solo Traveler",
     review:
-      "Visit My City helped us plan a smooth family holiday. Flights, hotels, transfers, and the full itinerary were handled clearly and professionally.",
+      "I had a wonderful journey through Sri Lanka with Visit My City. The tour was well organized, the travel arrangements were comfortable, and I received helpful support throughout my stay.",
     image: "/images/testimonials/1.png",
   },
   {
-    name: "Mr.Hardik Verma",
-    role: "Sri Lanka Tour Guest",
+    name: "Mr. Hardik Verma",
+    role: "Kundan Verma Family",
     review:
-      "Our Sri Lanka journey was beautifully organized. Kandy, Ella, Galle, and the coastal experiences were planned with great care and local knowledge.",
+      "Our family had a memorable time exploring Sri Lanka together. The itinerary included a great mix of sightseeing, culture, nature, and local experiences, with every journey arranged smoothly.",
     image: "/images/testimonials/2.png",
   },
   {
-    name: "Mr.kundan Verma",
-    role: "Honeymoon Traveler",
+    name: "Mr. Kundan Verma",
+    role: "Family Traveler",
     review:
-      "The team understood exactly what we wanted for our honeymoon. The hotel choices, travel plan, and support made everything stress-free.",
+      "Visit My City organized an enjoyable Sri Lanka holiday for our entire family. From transportation and accommodation to sightseeing, everything was coordinated professionally and with great care.",
     image: "/images/testimonials/3.png",
   },
   {
-    name: "Mr.Mazianis",
-    role: "Group Tour Guest",
+    name: "Mr. Mazianis",
+    role: "Family Traveler",
     review:
-      "From airport pickup to hotel stays and sightseeing, the full Sri Lanka tour was well coordinated. The guide and travel arrangements were excellent.",
+      "We visited Sri Lanka as a family and had a very enjoyable experience. The complete tour was thoughtfully arranged, and the reliable transport and assistance made travelling with our daughter comfortable.",
     image: "/images/testimonials/4.png",
   },
   {
-    name: "Mrs.Vanshika Verma",
-    role: "Sri Lanka Explorer",
+    name: "Mrs. Vanshika Verma",
+    role: "Kundan Verma Family",
     review:
-      "The itinerary felt personal and well balanced. We enjoyed the cultural places, local food, scenic views, and friendly support throughout the journey.",
+      "Travelling around Sri Lanka with our family was a wonderful experience. We enjoyed the beautiful destinations, cultural attractions, local food, and the friendly assistance provided throughout the tour.",
     image: "/images/testimonials/5.png",
   },
   {
-    name: "Mr.Sashank Gupta",
-    role: "Private Tour Guest",
+    name: "Mr. Sashank Gupta",
+    role: "Kundan Verma Family",
     review:
-      "Visit My City made our Sri Lanka trip easy from the first message. Transport, guide support, and daily coordination were handled very well.",
+      "The Sri Lanka family tour was carefully planned and easy to enjoy. The daily schedule, transportation, and sightseeing arrangements were handled smoothly from the beginning to the end.",
     image: "/images/testimonials/6.png",
   },
   {
-    name: "Mrs.Reena Verma",
-    role: "Leisure Traveler",
+    name: "Mrs. Reena Verma",
+    role: "Family Traveler",
     review:
-      "The team gave us clear travel options and helped arrange the important details. It saved us time and made the holiday planning much easier.",
+      "Our family holiday in Sri Lanka was comfortable, enjoyable, and well organized. Visit My City took care of the important travel arrangements, allowing us to relax and enjoy every destination together.",
     image: "/images/testimonials/7.png",
   },
   {
-    name: "Mrs.Eirini",
-    role: "Cultural Tour Guest",
+    name: "Mrs. Eirini",
+    role: "Family Traveler",
     review:
-      "We loved the mix of heritage, nature, and local experiences. The planning was smooth, and the team was always helpful during the tour.",
+      "Our family loved discovering Sri Lanka together. The journey offered a beautiful combination of culture, nature, sightseeing, and local experiences, and the arrangements made the entire holiday comfortable.",
     image: "/images/testimonials/8.png",
   },
 ];

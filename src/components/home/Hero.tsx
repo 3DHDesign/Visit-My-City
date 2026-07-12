@@ -37,6 +37,16 @@ const slides: HeroSlide[] = [
     mobileImage: "/images/vmc-fleet-support-mobile.jpg",
   },
   {
+    title: "Malaysia",
+    heading: "Discover Vibrant Malaysia.",
+    country: "Malaysia",
+    type: "Outbound",
+    description:
+      "Experience modern city attractions, cultural landmarks, family adventures, shopping, and tropical escapes across Malaysia.",
+    image: "/images/malaysia.jpg",
+    mobileImage: "/images/malaysia-mobile.jpg",
+  },
+  {
     title: "Galle",
     heading: "Walk Through Historic Galle.",
     country: "Sri Lanka",
