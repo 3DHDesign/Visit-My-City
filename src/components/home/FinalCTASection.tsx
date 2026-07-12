@@ -12,8 +12,14 @@ import { Link } from "react-router-dom";
 const contactOptions = [
   {
     label: "Call Travel Team",
-    value: "0114 600 900",
-    href: "tel:+94 114 600 900",
+    value: "+94 11 460 0900",
+    href: "tel:+94114600900",
+    icon: FiPhone,
+  },
+  {
+    label: "Call Mobile",
+    value: "+94 76 619 2447",
+    href: "tel:+94766192447",
     icon: FiPhone,
   },
   {
@@ -41,7 +47,7 @@ const travelTypes = [
 
 const FinalCTASection = () => {
   return (
-    <section className="relative overflow-hidden bg-[#FCFCFA] py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-[#FCFCFA] py-8 lg:py-12">
       {/* Background atmosphere */}
       <div className="pointer-events-none absolute left-0 top-0 h-[420px] w-[420px] rounded-full bg-[#2D6A4F]/10 blur-3xl" />
       <div className="pointer-events-none absolute bottom-0 right-0 h-[460px] w-[460px] rounded-full bg-[#E9A93B]/14 blur-3xl" />

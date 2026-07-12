@@ -18,12 +18,13 @@ const Home = () => {
       <WelcomeSriLankaSection />
       <VmcMomentsSection/>
       <TravelPathsSection />
+      <RealMomentsGallery />
       {/* <WhyChooseSection/> */}
       <ExperiencesSection/>
       {/* <TravelServicesSection/>
       <DestinationsSection/>
       <FeaturedJourneysSection/> */}
-       <RealMomentsGallery />
+      
       <TestimonialsSection/>
       <FinalCTASection/>
     </>

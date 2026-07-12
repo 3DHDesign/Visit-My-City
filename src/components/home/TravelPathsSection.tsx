@@ -1,4 +1,4 @@
-import { FiGlobe, FiMapPin, FiShield, FiCheckCircle } from "react-icons/fi";
+import { FiGlobe, FiMapPin, FiShield } from "react-icons/fi";
 import PrimaryButton from "../common/PrimaryButton";
 
 const sriLankaPins = [

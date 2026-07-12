@@ -1,4 +1,4 @@
-import { FiCheckCircle } from "react-icons/fi";
+ 
 
 const certifications = [
   {
