@@ -120,15 +120,15 @@ type DesktopNavItem =
       name: NavKey;
     };
 
-const DESKTOP_NAV_ITEMS: DesktopNavItem[] = [
-  { type: "link", name: "Home", path: "/" },
-  { type: "link", name: "About", path: "/about" },
-  { type: "dropdown", name: "Explore The World" },
-  { type: "link", name: "Experiences", path: "/experiences" },
-  { type: "dropdown", name: "Explore Sri Lanka" },
-  { type: "link", name: "Contact", path: "/contact" },
-];
-
+    const DESKTOP_NAV_ITEMS: DesktopNavItem[] = [
+      { type: "link", name: "Home", path: "/" },
+      { type: "link", name: "About", path: "/about" },
+      { type: "link", name: "Gallery", path: "/gallery" },
+      { type: "dropdown", name: "Explore The World" },
+      { type: "link", name: "Experiences", path: "/experiences" },
+      { type: "dropdown", name: "Explore Sri Lanka" },
+      { type: "link", name: "Contact", path: "/contact" },
+    ];
 /* ─── Active Link Class ────────────────────────────────────── */
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `rounded-xl px-3 py-2 text-[14px] font-medium transition-all duration-200 hover:bg-[#F6F1E9] hover:text-[#E9A93B] ${

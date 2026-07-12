@@ -14,63 +14,28 @@ import { Link, useLocation } from "react-router-dom";
 const IMAGES = {
   hero:
     "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=85",
+
   dubai:
     "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85",
-    azerbaijan:
+
+  azerbaijan:
     "https://images.unsplash.com/photo-1743586652972-0f8994efe810?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
   thailand:
     "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=900&q=85",
+
   malaysia:
     "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=85",
+
   singapore:
     "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=85",
+
   india:
     "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=85",
 };
 
 const destinations = [
-  {
-    id: "dubai",
-    title: "Dubai Packages",
-    icon: "🌆",
-    image: IMAGES.dubai,
-    subtitle: "City luxury & desert escapes",
-    desc: "Experience Dubai with modern city attractions, luxury shopping, desert safaris, skyline views, family entertainment, and premium holiday experiences.",
-    highlights: [
-      "Desert safari",
-      "City tour",
-      "Shopping experiences",
-      "Family attractions",
-    ],
-  },
-  {
-    id: "azerbaijan",
-    title: "Azerbaijan Packages",
-    icon: "🏔️",
-    image: IMAGES.azerbaijan,
-    subtitle: "Baku, mountains & culture",
-    desc: "Discover Azerbaijan through Baku city experiences, mountain scenery, cultural landmarks, old town streets, modern architecture, and scenic countryside routes.",
-    highlights: [
-      "Baku city tour",
-      "Old city walks",
-      "Mountain routes",
-      "Cultural landmarks",
-    ],
-  },
-  {
-    id: "thailand",
-    title: "Thailand Packages",
-    icon: "🏯",
-    image: IMAGES.thailand,
-    subtitle: "Temples, islands & nightlife",
-    desc: "Plan a Thailand holiday with Bangkok city experiences, temples, shopping, island getaways, beaches, nightlife, family activities, and leisure stays.",
-    highlights: [
-      "Bangkok city",
-      "Island stays",
-      "Temple visits",
-      "Beach leisure",
-    ],
-  },
+  
   {
     id: "malaysia",
     title: "Malaysia Packages",
@@ -97,6 +62,48 @@ const destinations = [
       "Gardens by the Bay",
       "City attractions",
       "Family experiences",
+    ],
+  },
+  {
+    id: "thailand",
+    title: "Thailand Packages",
+    icon: "🏯",
+    image: IMAGES.thailand,
+    subtitle: "Temples, islands & nightlife",
+    desc: "Plan a Thailand holiday with Bangkok city experiences, temples, shopping, island getaways, beaches, nightlife, family activities, and leisure stays.",
+    highlights: [
+      "Bangkok city",
+      "Island stays",
+      "Temple visits",
+      "Beach leisure",
+    ],
+  },
+  {
+    id: "dubai",
+    title: "Dubai Packages",
+    icon: "🌆",
+    image: IMAGES.dubai,
+    subtitle: "City luxury & desert escapes",
+    desc: "Experience Dubai with modern city attractions, luxury shopping, desert safaris, skyline views, family entertainment, and premium holiday experiences.",
+    highlights: [
+      "Desert safari",
+      "City tour",
+      "Shopping experiences",
+      "Family attractions",
+    ],
+  },
+  {
+    id: "azerbaijan",
+    title: "Azerbaijan Packages",
+    icon: "🏔️",
+    image: IMAGES.azerbaijan,
+    subtitle: "Baku, mountains & culture",
+    desc: "Discover Azerbaijan through Baku city experiences, mountain scenery, cultural landmarks, old town streets, modern architecture, and scenic countryside routes.",
+    highlights: [
+      "Baku city tour",
+      "Old city walks",
+      "Mountain routes",
+      "Cultural landmarks",
     ],
   },
   {
@@ -152,10 +159,14 @@ const ExploreTheWorld = () => {
           <img
             src={IMAGES.hero}
             alt="Explore the world with Visit My City"
-            className="h-full w-full object-cover opacity-40"
+            className="h-full w-full object-cover"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F33] via-[#0B1F33]/88 to-[#0B1F33]/35" />
+          {/* Cleaner balanced overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#071A2C]/88 via-[#071A2C]/48 to-[#071A2C]/10" />
+
+          {/* Subtle bottom depth */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#071A2C]/35 via-transparent to-transparent" />
         </div>
 
         <div className="container-wide relative z-10">
@@ -168,7 +179,7 @@ const ExploreTheWorld = () => {
               Outbound travel packages for unforgettable holidays.
             </h1>
 
-            <p className="mt-6 max-w-2xl text-[17px] leading-8 !text-white/75">
+            <p className="mt-6 max-w-2xl text-[17px] leading-8 !text-white/85">
               Visit My City arranges international tours for families, couples,
               groups, honeymooners, and leisure travelers with customized
               routes, hotel options, transfers, sightseeing, and travel support.
@@ -196,7 +207,7 @@ const ExploreTheWorld = () => {
       </section>
 
       {/* Intro */}
-      <section className="py-24">
+      <section className="py-8">
         <div className="container-wide">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <div>
@@ -220,7 +231,7 @@ const ExploreTheWorld = () => {
               {whyChoose.map((item) => (
                 <div
                   key={item}
-                  className="flex items-start gap-3 rounded-[24px] border border-[#EFE7DA] bg-white p-5 shadow-[0_14px_40px_rgba(11,31,51,0.04)]"
+                  className="group flex items-start gap-3 rounded-[24px] border border-[#E9E1D5] bg-white p-5 shadow-[0_8px_20px_rgba(11,31,51,0.05),0_18px_45px_rgba(11,31,51,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-[#E9A93B]/35 hover:shadow-[0_14px_30px_rgba(11,31,51,0.08),0_28px_60px_rgba(11,31,51,0.10)]"
                 >
                   <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2D6A4F] text-white">
                     <FiCheck size={14} />
@@ -237,7 +248,7 @@ const ExploreTheWorld = () => {
       </section>
 
       {/* Destinations */}
-      <section id="destinations" className="bg-white py-24">
+      <section id="destinations" className="bg-white py-8">
         <div className="container-wide">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-[11px] font-bold uppercase tracking-[0.24em] !text-[#E9A93B]">
@@ -255,29 +266,32 @@ const ExploreTheWorld = () => {
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-14 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
             {destinations.map((item) => (
               <Link
                 id={item.id}
                 key={item.title}
                 to={`/explore-the-world/${item.id}`}
-                className="group scroll-mt-28 overflow-hidden rounded-[32px] border border-[#EFE7DA] bg-[#FCFCFA] shadow-[0_16px_50px_rgba(11,31,51,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_80px_rgba(11,31,51,0.12)]"
+                className="group scroll-mt-28 overflow-hidden rounded-[32px] border border-[#E9E1D5] bg-white shadow-[0_8px_20px_rgba(11,31,51,0.06),0_24px_55px_rgba(11,31,51,0.09)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E9A93B]/40 hover:shadow-[0_14px_30px_rgba(11,31,51,0.10),0_34px_75px_rgba(11,31,51,0.14)]"
               >
+                {/* Image */}
                 <div className="relative h-[250px] overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.05]"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/85 via-[#0B1F33]/10 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#071A2C]/90 via-[#071A2C]/20 to-transparent" />
 
-                  <span className="absolute right-5 top-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#E9A93B] text-[22px]">
+                  {/* Destination Icon */}
+                  <span className="absolute right-5 top-5 flex h-12 w-12 items-center justify-center rounded-[16px] border border-white/20 bg-[#E9A93B] text-[22px] shadow-[0_10px_30px_rgba(0,0,0,0.22)]">
                     {item.icon}
                   </span>
 
+                  {/* Image Content */}
                   <div className="absolute bottom-5 left-5 right-5">
-                    <p className="text-[13px] font-bold uppercase tracking-[0.14em] !text-white/75">
+                    <p className="text-[12px] font-bold uppercase tracking-[0.14em] !text-white/75">
                       {item.subtitle}
                     </p>
 
@@ -287,28 +301,34 @@ const ExploreTheWorld = () => {
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <p className="text-[15px] leading-8 !text-slate-600">
-                    {item.desc}
-                  </p>
+                {/* Card Content */}
+                <div className="relative overflow-hidden bg-gradient-to-br from-white to-[#FCFAF6] p-6">
+                  <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[#E9A93B]/10 blur-3xl" />
 
-                  <div className="mt-6 flex flex-wrap gap-2">
-                    {item.highlights.map((point) => (
-                      <span
-                        key={point}
-                        className="rounded-full bg-white px-4 py-2 text-[13px] font-semibold !text-[#2D6A4F]"
-                      >
-                        {point}
-                      </span>
-                    ))}
-                  </div>
+                  <div className="relative z-10">
+                    <p className="text-[15px] leading-8 !text-slate-600">
+                      {item.desc}
+                    </p>
 
-                  <div className="mt-7 inline-flex items-center gap-3 text-[14px] font-bold !text-[#0B1F33]">
-                    View Packages
-                    <FiArrowUpRight
-                      size={16}
-                      className="transition-transform duration-300 group-hover:translate-x-1"
-                    />
+                    <div className="mt-6 flex flex-wrap gap-2">
+                      {item.highlights.map((point) => (
+                        <span
+                          key={point}
+                          className="rounded-full border border-[#2D6A4F]/10 bg-[#2D6A4F]/7 px-4 py-2 text-[13px] font-semibold !text-[#2D6A4F]"
+                        >
+                          {point}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="mt-7 inline-flex items-center gap-3 text-[14px] font-bold !text-[#0B1F33]">
+                      View Packages
+
+                      <FiArrowUpRight
+                        size={16}
+                        className="transition-transform duration-300 group-hover:translate-x-1"
+                      />
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -318,11 +338,12 @@ const ExploreTheWorld = () => {
       </section>
 
       {/* Travel Styles */}
-      <section className="bg-[#FCFCFA] py-24">
+      <section className="bg-[#FCFCFA] py-8">
         <div className="container-wide">
           <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-[32px] border border-[#EFE7DA] bg-white p-8">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#E9A93B]/15 text-[#E9A93B]">
+            {/* Global Destinations */}
+            <div className="group rounded-[32px] border border-[#E9E1D5] bg-white p-8 shadow-[0_8px_20px_rgba(11,31,51,0.05),0_20px_50px_rgba(11,31,51,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-[#E9A93B]/35 hover:shadow-[0_14px_30px_rgba(11,31,51,0.08),0_30px_65px_rgba(11,31,51,0.11)]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-[16px] bg-[#0B1F33] text-[#E9A93B] shadow-[0_10px_25px_rgba(11,31,51,0.18)]">
                 <FiGlobe size={22} />
               </div>
 
@@ -336,8 +357,9 @@ const ExploreTheWorld = () => {
               </p>
             </div>
 
-            <div className="rounded-[32px] border border-[#EFE7DA] bg-white p-8">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#E9A93B]/15 text-[#E9A93B]">
+            {/* Every Traveler */}
+            <div className="group rounded-[32px] border border-[#E9E1D5] bg-white p-8 shadow-[0_8px_20px_rgba(11,31,51,0.05),0_20px_50px_rgba(11,31,51,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-[#E9A93B]/35 hover:shadow-[0_14px_30px_rgba(11,31,51,0.08),0_30px_65px_rgba(11,31,51,0.11)]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-[16px] bg-[#0B1F33] text-[#E9A93B] shadow-[0_10px_25px_rgba(11,31,51,0.18)]">
                 <FiUsers size={22} />
               </div>
 
@@ -351,8 +373,9 @@ const ExploreTheWorld = () => {
               </p>
             </div>
 
-            <div className="rounded-[32px] border border-[#EFE7DA] bg-white p-8">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#E9A93B]/15 text-[#E9A93B]">
+            {/* Custom Planning */}
+            <div className="group rounded-[32px] border border-[#E9E1D5] bg-white p-8 shadow-[0_8px_20px_rgba(11,31,51,0.05),0_20px_50px_rgba(11,31,51,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-[#E9A93B]/35 hover:shadow-[0_14px_30px_rgba(11,31,51,0.08),0_30px_65px_rgba(11,31,51,0.11)]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-[16px] bg-[#0B1F33] text-[#E9A93B] shadow-[0_10px_25px_rgba(11,31,51,0.18)]">
                 <FiMapPin size={22} />
               </div>
 
@@ -370,13 +393,14 @@ const ExploreTheWorld = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-8">
         <div className="container-wide">
-          <div className="relative overflow-hidden rounded-[40px] bg-[#0B1F33] p-8 text-center md:p-14">
+          <div className="relative overflow-hidden rounded-[40px] bg-[#0B1F33] p-8 text-center shadow-[0_18px_50px_rgba(11,31,51,0.12),0_40px_90px_rgba(11,31,51,0.15)] md:p-14">
             <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#E9A93B]/20 blur-3xl" />
+
             <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[#2D6A4F]/30 blur-3xl" />
 
-            <div className="relative z-10 mx-auto max-w-3xl">
+            <div className="relative z-10 mx-auto max-w-4xl">
               <p className="flex items-center justify-center gap-2 text-[11px] font-bold uppercase tracking-[0.24em] !text-[#E9A93B]">
                 <FiStar size={14} />
                 Start Planning
@@ -386,13 +410,13 @@ const ExploreTheWorld = () => {
                 Need an outbound tour package arranged?
               </h2>
 
-              <p className="mt-5 text-[16px] leading-8 !text-white/70">
+              <p className="mx-auto mt-5 max-w-3xl text-[16px] leading-8 !text-white/70">
                 Share the destination, travel dates, number of guests, hotel
                 preference, special interests, and budget. Our team will prepare
                 a suitable international travel package and quotation.
               </p>
 
-              <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
+              <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
                 <Link
                   to="/contact"
                   className="inline-flex items-center justify-center gap-3 rounded-full bg-[#E9A93B] px-8 py-4 text-[14px] font-bold !text-[#0B1F33] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
@@ -401,12 +425,22 @@ const ExploreTheWorld = () => {
                   <FiArrowUpRight size={16} />
                 </Link>
 
+                {/* Landline */}
                 <a
-                  href="tel:+94114327637"
-                  className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
+                  href="tel:+94114600900"
+                  className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-7 py-4 text-[14px] font-bold !text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
                 >
                   <FiPhone size={16} />
-                  Call +94 11 432 7637
+                  +94 11 460 0900
+                </a>
+
+                {/* Mobile */}
+                <a
+                  href="tel:+94766192447"
+                  className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-7 py-4 text-[14px] font-bold !text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
+                >
+                  <FiPhone size={16} />
+                  +94 76 619 2447
                 </a>
               </div>
             </div>

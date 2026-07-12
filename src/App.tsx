@@ -22,6 +22,7 @@ import ExploreTheWorld from "./pages/ExploreTheWorld";
 import WorldCountryPage from "./pages/world/WorldCountryPage";
 
 import FloatingWhatsApp from "./components/common/FloatingWhatsApp";
+import Gallery from "./pages/Gallery";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -82,6 +83,7 @@ function App() {
           path="/explore-the-world/:countrySlug"
           element={<WorldCountryPage />}
         />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
 
       <FloatingWhatsApp />
