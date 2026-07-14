@@ -26,7 +26,7 @@ const moments: Moment[] = [
     subtitle:
       "Smooth arrivals with VMC coach support, luggage assistance, and coordinated transfers from the airport.",
     label: "Arrivals",
-    image: "/images/vmc-moments/vmc-coach-arrival.png",
+    image: "/images/vmc-moments/vmc-coach-arrival.jpg",
     mobileImage: "/images/vmc-moments/vmc-coach-arrival-mobile.jpg",
   },
   {
@@ -50,7 +50,7 @@ const moments: Moment[] = [
     subtitle:
       "Guided highland experiences through tea estates, misty views, local stories, and cool mountain air.",
     label: "Guided Tours",
-    image: "/images/vmc-moments/tea-country-guided-tour.png",
+    image: "/images/vmc-moments/tea-country-guided-tour.jpg",
     mobileImage: "/images/vmc-moments/tea-country-guided-tour-mobile.jpg",
   },
   {
@@ -58,7 +58,7 @@ const moments: Moment[] = [
     subtitle:
       "Wildlife journeys with safe coordination, park experiences, jeep support, and on-ground assistance.",
     label: "Wildlife",
-    image: "/images/vmc-moments/safari-drive.png",
+    image: "/images/vmc-moments/safari-drive.jpg",
     mobileImage: "/images/vmc-moments/safari-drive-mobile.jpg",
   },
   {
@@ -66,7 +66,7 @@ const moments: Moment[] = [
     subtitle:
       "Relaxed coastal experiences with sunsets, fishing villages, beach stays, local boats, and island charm.",
     label: "Coastal",
-    image: "/images/vmc-moments/beach-moment.png",
+    image: "/images/vmc-moments/beach-moment.jpg",
     mobileImage: "/images/vmc-moments/beach-moment-mobile.jpg",
   },
   {
@@ -74,7 +74,7 @@ const moments: Moment[] = [
     subtitle:
       "Authentic Sri Lankan flavours, hosted meals, village hospitality, and memorable cultural dining moments.",
     label: "Culture",
-    image: "/images/vmc-moments/local-food-experience.png",
+    image: "/images/vmc-moments/local-food-experience.jpg",
     mobileImage: "/images/vmc-moments/local-food-experience-mobile.jpg",
   },
 ];

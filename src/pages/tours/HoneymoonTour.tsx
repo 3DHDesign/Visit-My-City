@@ -84,7 +84,7 @@ const itinerary = [
     day: "Day 08",
     title: "Departure",
     location: "Down South → Airport",
-    image: IMAGES.arrival,
+    image: IMAGES.departure,
     desc: "After a relaxed final morning, the couple will be transferred to Bandaranaike International Airport for departure. The final day plan will be arranged based on flight time and preferred stopovers.",
   },
 ];

@@ -245,3 +245,153 @@ a {
   color: #e9a93b;
   opacity: 1;
 }
+
+/* =========================================================
+   WELLNESS SECTION ANIMATIONS
+========================================================= */
+
+@keyframes wellnessProgress {
+  from {
+      width: 0%;
+  }
+
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes wellnessImageIn {
+  from {
+      opacity: 0;
+      transform: scale(1.04);
+  }
+
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes wellnessContentIn {
+  from {
+      opacity: 0;
+      transform: translateY(14px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes wellnessAwardEnter {
+  0% {
+      opacity: 0;
+      transform: translateY(-14px) scale(0.97);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes wellnessAwardShine {
+  0% {
+      left: -45%;
+  }
+
+  55% {
+      left: 115%;
+  }
+
+  100% {
+      left: 115%;
+  }
+}
+
+@keyframes wellnessAwardIcon {
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-3px);
+  }
+}
+
+@keyframes wellnessYearPulse {
+  0%,
+  100% {
+      box-shadow: 0 8px 20px rgba(7, 30, 44, 0.2);
+      transform: scale(1);
+  }
+
+  50% {
+      box-shadow:
+          0 10px 28px rgba(7, 30, 44, 0.28),
+          0 0 0 4px rgba(233, 169, 59, 0.12);
+      transform: scale(1.025);
+  }
+}
+
+@keyframes wellnessDotPulse {
+  0%,
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+
+  50% {
+      opacity: 0.55;
+      transform: scale(1.5);
+  }
+}
+
+.wellness-award-enter {
+  animation:
+      wellnessAwardEnter 0.8s cubic-bezier(0.22, 1, 0.36, 1)
+      both;
+}
+
+.wellness-award-shine {
+  animation: wellnessAwardShine 5s ease-in-out infinite 1.2s;
+}
+
+.wellness-award-icon {
+  animation: wellnessAwardIcon 3.5s ease-in-out infinite;
+}
+
+.wellness-year-badge {
+  animation: wellnessYearPulse 3s ease-in-out infinite;
+}
+
+.wellness-dot {
+  animation: wellnessDotPulse 2s ease-in-out infinite;
+}
+
+.wellness-progress {
+  animation: wellnessProgress 5.5s linear forwards;
+}
+
+.wellness-image-in {
+  animation: wellnessImageIn 0.7s ease-out;
+}
+
+.wellness-content-in {
+  animation: wellnessContentIn 0.55s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wellness-award-enter,
+  .wellness-award-shine,
+  .wellness-award-icon,
+  .wellness-year-badge,
+  .wellness-dot,
+  .wellness-progress,
+  .wellness-image-in,
+  .wellness-content-in {
+      animation: none !important;
+  }
+}

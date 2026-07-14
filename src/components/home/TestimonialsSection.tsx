@@ -17,61 +17,61 @@ type Testimonial = {
   image: string;
 };
 
-const testimonials: Testimonial[] = [
+ const testimonials: Testimonial[] = [
   {
     name: "Mr. Lampros",
     role: "Solo Traveler",
     review:
-      "I had a wonderful journey through Sri Lanka with Visit My City. The tour was well organized, the travel arrangements were comfortable, and I received helpful support throughout my stay.",
+      "Very nice journey. I’m very happy with the trip and the support. Thank you!",
     image: "/images/testimonials/1.png",
   },
   {
     name: "Mr. Hardik Verma",
     role: "Kundan Verma Family",
     review:
-      "Our family had a memorable time exploring Sri Lanka together. The itinerary included a great mix of sightseeing, culture, nature, and local experiences, with every journey arranged smoothly.",
+      "We had a wonderful family holiday in Sri Lanka. The trip was well organized, the transport was comfortable, and we enjoyed visiting so many beautiful places together. It was a very memorable experience for all of us.",
     image: "/images/testimonials/2.png",
   },
   {
     name: "Mr. Kundan Verma",
     role: "Family Traveler",
     review:
-      "Visit My City organized an enjoyable Sri Lanka holiday for our entire family. From transportation and accommodation to sightseeing, everything was coordinated professionally and with great care.",
+      "Very good service and a beautiful tour. Our family enjoyed the trip a lot.",
     image: "/images/testimonials/3.png",
   },
   {
     name: "Mr. Mazianis",
     role: "Family Traveler",
     review:
-      "We visited Sri Lanka as a family and had a very enjoyable experience. The complete tour was thoughtfully arranged, and the reliable transport and assistance made travelling with our daughter comfortable.",
+      "We travelled with our daughter and everything was arranged very well. The journey was comfortable, and we always felt supported during the trip. We really enjoyed discovering Sri Lanka as a family.",
     image: "/images/testimonials/4.png",
   },
   {
     name: "Mrs. Vanshika Verma",
     role: "Kundan Verma Family",
     review:
-      "Travelling around Sri Lanka with our family was a wonderful experience. We enjoyed the beautiful destinations, cultural attractions, local food, and the friendly assistance provided throughout the tour.",
+      "Sri Lanka was beautiful! We enjoyed the places, the food and the whole experience.",
     image: "/images/testimonials/5.png",
   },
   {
     name: "Mr. Sashank Gupta",
     role: "Kundan Verma Family",
     review:
-      "The Sri Lanka family tour was carefully planned and easy to enjoy. The daily schedule, transportation, and sightseeing arrangements were handled smoothly from the beginning to the end.",
+      "The trip was well planned and easy for us. We visited many beautiful places and had a really good time throughout the journey.",
     image: "/images/testimonials/6.png",
   },
   {
     name: "Mrs. Reena Verma",
     role: "Family Traveler",
     review:
-      "Our family holiday in Sri Lanka was comfortable, enjoyable, and well organized. Visit My City took care of the important travel arrangements, allowing us to relax and enjoy every destination together.",
+      "Very happy with our holiday. We could relax and enjoy the time with our family without worrying about the travel arrangements.",
     image: "/images/testimonials/7.png",
   },
   {
     name: "Mrs. Eirini",
     role: "Family Traveler",
     review:
-      "Our family loved discovering Sri Lanka together. The journey offered a beautiful combination of culture, nature, sightseeing, and local experiences, and the arrangements made the entire holiday comfortable.",
+      "We loved our time in Sri Lanka. The country is beautiful, the people were very kind, and every part of the journey gave us something different to enjoy. It was a lovely family experience and we will remember it for a long time.",
     image: "/images/testimonials/8.png",
   },
 ];

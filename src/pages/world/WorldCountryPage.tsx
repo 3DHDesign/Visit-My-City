@@ -84,7 +84,7 @@ const WorldCountryPage = () => {
               </Link>
 
               <a
-                href="tel:+94114327637"
+                href="tel:+94 76 619 2447"
                 className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
               >
                 <FiPhone size={16} />
@@ -96,28 +96,38 @@ const WorldCountryPage = () => {
       </section>
 
       {/* Facts */}
-      <section className="relative z-20 -mt-12">
+      <section className="relative z-20 -mt-10 px-4 md:-mt-14">
         <div className="container-wide">
-          <div className="grid gap-4 rounded-[34px] border border-[#EFE7DA] bg-white p-5 shadow-[0_24px_80px_rgba(11,31,51,0.12)] md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {tourFacts.map((item) => {
               const Icon = item.icon;
 
               return (
                 <div
                   key={item.label}
-                  className="rounded-[26px] bg-[#FCFCFA] p-5"
+                  className="group relative overflow-hidden rounded-[26px] border border-[#E9E1D5] bg-white p-6 shadow-[0_14px_35px_rgba(11,31,51,0.08),0_30px_70px_rgba(11,31,51,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E9A93B]/45 hover:shadow-[0_20px_45px_rgba(11,31,51,0.12),0_40px_90px_rgba(11,31,51,0.12)]"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#E9A93B]/12 text-[#E9A93B]">
-                    <Icon size={21} />
+                  {/* Decorative background */}
+                  <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-[#E9A93B]/10 blur-2xl transition-transform duration-500 group-hover:scale-125" />
+
+                  {/* Top accent */}
+                  <div className="absolute left-6 right-6 top-0 h-[3px] rounded-b-full bg-gradient-to-r from-[#E9A93B] to-[#2D6A4F]" />
+
+                  <div className="relative flex items-start gap-4">
+                    <div className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-[18px] bg-[#0B1F33] text-[#E9A93B] shadow-[0_10px_25px_rgba(11,31,51,0.20)] transition-transform duration-300 group-hover:scale-105">
+                      <Icon size={22} />
+                    </div>
+
+                    <div className="min-w-0 pt-1">
+                      <p className="text-[10px] font-bold uppercase tracking-[0.2em] !text-[#E9A93B]">
+                        {item.label}
+                      </p>
+
+                      <h3 className="mt-2 text-[16px] font-bold leading-6 !text-[#0B1F33]">
+                        {item.value}
+                      </h3>
+                    </div>
                   </div>
-
-                  <p className="mt-5 text-[12px] font-bold uppercase tracking-[0.16em] !text-slate-400">
-                    {item.label}
-                  </p>
-
-                  <h3 className="mt-2 text-[16px] font-bold leading-6 !text-[#0B1F33]">
-                    {item.value}
-                  </h3>
                 </div>
               );
             })}
@@ -126,7 +136,7 @@ const WorldCountryPage = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-24">
+      <section className="py-8">
         <div className="container-wide">
           <div className="grid gap-12 lg:grid-cols-[1fr_0.75fr] lg:items-start">
             <div>
@@ -201,7 +211,7 @@ const WorldCountryPage = () => {
       </section>
 
       {/* Experiences */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-8">
         <div className="container-wide">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-[11px] font-bold uppercase tracking-[0.24em] !text-[#E9A93B]">
@@ -246,7 +256,7 @@ const WorldCountryPage = () => {
       </section>
 
       {/* Includes */}
-      <section className="bg-[#FCFCFA] py-24">
+      <section className="bg-[#FCFCFA] py-8">
         <div className="container-wide">
           <div className="grid gap-10 lg:grid-cols-[0.75fr_1fr] lg:items-center">
             <div>
@@ -286,7 +296,7 @@ const WorldCountryPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-8">
         <div className="container-wide">
           <div className="relative overflow-hidden rounded-[40px] bg-[#0B1F33] p-8 text-center md:p-14">
             <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#E9A93B]/20 blur-3xl" />
@@ -307,7 +317,7 @@ const WorldCountryPage = () => {
                 a suitable outbound travel package and quotation.
               </p>
 
-              <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
+              <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
                 <Link
                   to="/contact"
                   className="inline-flex items-center justify-center gap-3 rounded-full bg-[#E9A93B] px-8 py-4 text-[14px] font-bold !text-[#0B1F33] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
@@ -317,11 +327,19 @@ const WorldCountryPage = () => {
                 </Link>
 
                 <a
-                  href="tel:+94114327637"
+                  href="tel:+94114600900"
                   className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
                 >
                   <FiPhone size={16} />
-                  Call +94 11 432 7637
+                  +94 11 460 0900
+                </a>
+
+                <a
+                  href="tel:+94766192447"
+                  className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-8 py-4 text-[14px] font-bold !text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:!text-[#0B1F33]"
+                >
+                  <FiPhone size={16} />
+                  +94 76 619 2447
                 </a>
               </div>
             </div>

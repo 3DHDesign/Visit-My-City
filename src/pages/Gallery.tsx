@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import {
     FiCamera,
+    FiChevronDown,
     FiChevronLeft,
     FiChevronRight,
     FiGlobe,
@@ -433,15 +434,237 @@ const galleryImages: GalleryImage[] = [
         categories: ["Scenic Journeys"],
     },
 
+  // =========================
+// OUTBOUND - MALAYSIA
+// =========================
+{
+    src: "/images/gallery/outbound/malaysia/visit-my-city-malaysia-group-tour-01.jpeg",
+    alt: "Visit My City Malaysia group tour",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia1.jpeg",
+    alt: "Malaysia group tour water park experience",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia2.jpeg",
+    alt: "Malaysia group tour water park experience",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia3.jpeg",
+    alt: "Visit My City travelers in Malaysia",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia4.jpeg",
+    alt: "Malaysia group travel memories",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia5.jpeg",
+    alt: "Malaysia group tour experience",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia6.jpeg",
+    alt: "Visit My City Malaysia sightseeing tour",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia7.jpeg",
+    alt: "Malaysia group sightseeing experience",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia8.jpeg",
+    alt: "Visit My City group at Petronas Twin Towers Malaysia",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia9.jpeg",
+    alt: "Malaysia group holiday experience",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia10.jpeg",
+    alt: "Visit My City Malaysia group travel experience",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia11.jpeg",
+    alt: "Visit My City Malaysia group tour memories",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia12.jpeg",
+    alt: "Malaysia group transportation experience",
+    type: "Outbound",
+    country: "Malaysia",
+},
+{
+    src: "/images/gallery/outbound/malaysia/malaysia13.jpeg",
+    alt: "Visit My City Malaysia group journey",
+    type: "Outbound",
+    country: "Malaysia",
+},
+
     // =========================
-    // OUTBOUND - MALAYSIA
+    // OUTBOUND - INDONESIA
     // =========================
     {
-        src: "/images/gallery/outbound/visit-my-city-malaysia-group-tour-01.jpeg",
-        alt: "Visit My City Malaysia group tour",
+        src: "/images/gallery/outbound/indonesia/indonesia1.jpeg",
+        alt: "Visit My City travelers exploring Indonesia",
         type: "Outbound",
-        country: "Malaysia",
+        country: "Indonesia",
     },
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia2.jpeg",
+        alt: "Scenic travel experience in Indonesia",
+        type: "Outbound",
+        country: "Indonesia",
+    },
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia3.jpeg",
+        alt: "Visit My City group tour experience in Indonesia",
+        type: "Outbound",
+        country: "Indonesia",
+    },
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia4.jpeg",
+        alt: "Travelers enjoying their Indonesia holiday",
+        type: "Outbound",
+        country: "Indonesia",
+    },
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia5.jpeg",
+        alt: "Visit My City travelers enjoying a sightseeing experience in Indonesia",
+        type: "Outbound",
+        country: "Indonesia",
+    },
+
+    // =========================
+    // OUTBOUND - KOH SAMUI ISLAND
+    // =========================
+    {
+        src: "/images/gallery/outbound/kohsamui/koh1.jpeg",
+        alt: "Visit My City travelers exploring Koh Samui Island Thailand",
+        type: "Outbound",
+        country: "Koh Samui Island",
+    },
+    {
+        src: "/images/gallery/outbound/kohsamui/koh2.jpeg",
+        alt: "Tropical beach holiday experience in Koh Samui Island",
+        type: "Outbound",
+        country: "Koh Samui Island",
+    },
+    {
+        src: "/images/gallery/outbound/kohsamui/koh3.jpeg",
+        alt: "Visit My City group tour in Koh Samui Island",
+        type: "Outbound",
+        country: "Koh Samui Island",
+    },
+    {
+        src: "/images/gallery/outbound/kohsamui/koh4.jpeg",
+        alt: "Travelers enjoying the beach in Koh Samui Island",
+        type: "Outbound",
+        country: "Koh Samui Island",
+    },
+    {
+        src: "/images/gallery/outbound/kohsamui/koh5.jpeg",
+        alt: "Koh Samui Island boat travel experience",
+        type: "Outbound",
+        country: "Koh Samui Island",
+    },
+    {
+        src: "/images/gallery/outbound/kohsamui/koh6.jpeg",
+        alt: "Waterfall experience during a Koh Samui Island tour",
+        type: "Outbound",
+        country: "Koh Samui Island",
+    },
+    {
+        src: "/images/gallery/outbound/kohsamui/koh7.jpeg",
+        alt: "Koh Samui Island resort and water park experience",
+        type: "Outbound",
+        country: "Koh Samui Island",
+    },
+
+    // =========================
+// OUTBOUND - THAILAND
+// =========================
+{
+    src: "/images/gallery/outbound/thailand/Thailand1.jpeg",
+    alt: "Visit My City Thailand tour arrival experience",
+    type: "Outbound",
+    country: "Thailand",
+},
+{
+    src: "/images/gallery/outbound/thailand/Thailand2.jpeg",
+    alt: "Travelers visiting a cultural attraction in Thailand",
+    type: "Outbound",
+    country: "Thailand",
+},
+{
+    src: "/images/gallery/outbound/thailand/Thailand3.jpeg",
+    alt: "Temple sightseeing experience in Thailand",
+    type: "Outbound",
+    country: "Thailand",
+},
+{
+    src: "/images/gallery/outbound/thailand/Thailand4.jpeg",
+    alt: "Visit My City travelers exploring Thailand",
+    type: "Outbound",
+    country: "Thailand",
+},
+{
+    src: "/images/gallery/outbound/thailand/thailand5.jpeg",
+    alt: "Visit My City group enjoying a Thailand tour",
+    type: "Outbound",
+    country: "Thailand",
+},
+{
+    src: "/images/gallery/outbound/thailand/thailand6.jpeg",
+    alt: "Travelers exploring a busy shopping area in Thailand",
+    type: "Outbound",
+    country: "Thailand",
+},
+{
+    src: "/images/gallery/outbound/thailand/thailand7.jpeg",
+    alt: "Visit My City travelers enjoying a local Thailand experience",
+    type: "Outbound",
+    country: "Thailand",
+},
+{
+    src: "/images/gallery/outbound/thailand/thailand8.jpeg",
+    alt: "Thailand canal and city sightseeing experience",
+    type: "Outbound",
+    country: "Thailand",
+},
+{
+    src: "/images/gallery/outbound/thailand/thailand9.jpeg",
+    alt: "Visit My City Thailand group travel experience",
+    type: "Outbound",
+    country: "Thailand",
+},
+{
+    src: "/images/gallery/outbound/thailand/thailand10.jpeg",
+    alt: "Visit My City group tour in Thailand",
+    type: "Outbound",
+    country: "Thailand",
+},
 ];
 
 const Gallery = () => {
@@ -507,10 +730,24 @@ const Gallery = () => {
     return (
         <main className="bg-[#FCFCFA]">
             {/* Hero */}
-            <section className="relative overflow-hidden bg-[#0B1F33] pb-24 pt-36">
-                <div className="absolute inset-0">
-                    <div className="absolute -left-20 top-20 h-80 w-80 rounded-full bg-[#2D6A4F]/30 blur-[100px]" />
-                    <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-[#E9A93B]/20 blur-[120px]" />
+            <section className="relative overflow-hidden pb-16 pt-24 md:pb-20 md:pt-28">
+                <div className="absolute inset-0 bg-[#0B1F33]">
+                    {/* Blurred background fills the full hero */}
+                    <img
+                        src="/images/herogallery.jpg"
+                        alt=""
+                        aria-hidden="true"
+                        className="absolute inset-0 h-full w-full scale-110 object-cover blur-xl"
+                    />
+
+                    <div className="absolute inset-0 bg-[#071A2C]/45" />
+
+                    {/* Complete collage without cropping */}
+                    <img
+                        src="/images/herogallery.jpg"
+                        alt="Visit My City travel gallery experiences"
+                        className="absolute inset-0 h-full w-full object-contain"
+                    />
                 </div>
 
                 <div className="container-wide relative z-10">
@@ -520,45 +757,55 @@ const Gallery = () => {
                             Travel Gallery
                         </p>
 
-                        <h1 className="mt-5 text-[42px] font-bold leading-[1.06] !text-white md:text-[68px]">
+                        <h1 className="mt-4 text-[38px] font-bold leading-[1.05] !text-white drop-shadow-[0_3px_12px_rgba(0,0,0,0.75)] md:text-[56px]">
                             Journeys worth remembering.
                             <span className="block !text-[#E9A93B]">
                                 Moments worth sharing.
                             </span>
                         </h1>
 
-                        <p className="mx-auto mt-6 max-w-2xl text-[17px] leading-8 !text-white/75">
+                        <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-7 !text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] md:text-[16px]">
                             Explore memorable travel experiences, cultural discoveries, wildlife
                             encounters, scenic journeys, local moments, and international tours
                             arranged by Visit My City.
                         </p>
+
+                        <a
+                            href="#gallery-images"
+                            className="mt-7 inline-flex items-center gap-3 rounded-full border border-white/30 bg-[#071A2C]/60 px-5 py-3 text-[13px] font-bold !text-white shadow-lg backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:!text-[#0B1F33]"
+                        >
+                            Scroll to Explore
+                            <FiChevronDown className="animate-bounce" size={18} />
+                        </a>
                     </div>
                 </div>
             </section>
 
             {/* Gallery */}
-            <section className="py-12 md:py-16">
+            <section className="relative z-20 -mt-7 pb-12 md:-mt-9 md:pb-16" id="gallery-images" >
                 <div className="container-wide">
-                    {/* Main Tabs */}
-                    <div className="mx-auto flex max-w-md rounded-full border border-[#E9E1D5] bg-white p-1.5 shadow-[0_12px_35px_rgba(11,31,51,0.08)]">
-                        {(["Inbound", "Outbound"] as GalleryType[]).map((type) => (
-                            <button
-                                key={type}
-                                onClick={() => handleTypeChange(type)}
-                                className={`flex flex-1 items-center justify-center gap-2 rounded-full px-5 py-3 text-[14px] font-bold transition-all duration-300 ${activeType === type
+                    <div className="rounded-[30px] border border-[#E9E1D5] bg-[#FCFCFA] px-4 pb-8 pt-6 shadow-[0_20px_60px_rgba(11,31,51,0.10)] md:px-8">
+                        {/* Main Tabs */}
+                        <div className="mx-auto flex max-w-md rounded-full border border-[#E9E1D5] bg-white p-1.5 shadow-[0_12px_35px_rgba(11,31,51,0.08)]">
+                            {(["Inbound", "Outbound"] as GalleryType[]).map((type) => (
+                                <button
+                                    key={type}
+                                    onClick={() => handleTypeChange(type)}
+                                    className={`flex flex-1 items-center justify-center gap-2 rounded-full px-5 py-3 text-[14px] font-bold transition-all duration-300 ${activeType === type
                                         ? "bg-[#0B1F33] !text-white shadow-[0_8px_20px_rgba(11,31,51,0.20)]"
                                         : "!text-slate-500 hover:!text-[#0B1F33]"
-                                    }`}
-                            >
-                                {type === "Inbound" ? (
-                                    <FiMapPin size={16} />
-                                ) : (
-                                    <FiGlobe size={16} />
-                                )}
+                                        }`}
+                                >
+                                    {type === "Inbound" ? (
+                                        <FiMapPin size={16} />
+                                    ) : (
+                                        <FiGlobe size={16} />
+                                    )}
 
-                                {type} Tours
-                            </button>
-                        ))}
+                                    {type} Tours
+                                </button>
+                            ))}
+                        </div>
                     </div>
 
                     {/* Inbound Categories */}
@@ -569,8 +816,8 @@ const Gallery = () => {
                                     key={category}
                                     onClick={() => setActiveCategory(category)}
                                     className={`rounded-full border px-4 py-2.5 text-[13px] font-semibold transition-all duration-300 ${activeCategory === category
-                                            ? "border-[#E9A93B] bg-[#E9A93B] !text-[#0B1F33] shadow-[0_8px_20px_rgba(233,169,59,0.22)]"
-                                            : "border-[#E9E1D5] bg-white !text-slate-600 hover:border-[#E9A93B]/50 hover:!text-[#0B1F33]"
+                                        ? "border-[#E9A93B] bg-[#E9A93B] !text-[#0B1F33] shadow-[0_8px_20px_rgba(233,169,59,0.22)]"
+                                        : "border-[#E9E1D5] bg-white !text-slate-600 hover:border-[#E9A93B]/50 hover:!text-[#0B1F33]"
                                         }`}
                                 >
                                     {category}
@@ -582,18 +829,22 @@ const Gallery = () => {
                     {/* Outbound Countries */}
                     {activeType === "Outbound" && (
                         <div className="mx-auto mt-8 flex justify-center gap-2.5">
-                            {["All", "Malaysia"].map((country) => (
-                                <button
-                                    key={country}
-                                    onClick={() => setActiveCountry(country)}
-                                    className={`rounded-full border px-5 py-2.5 text-[13px] font-semibold transition-all duration-300 ${activeCountry === country
+                            {["All",
+                                "Malaysia",
+                                "Indonesia",
+                                "Koh Samui Island",
+                                "Thailand",].map((country) => (
+                                    <button
+                                        key={country}
+                                        onClick={() => setActiveCountry(country)}
+                                        className={`rounded-full border px-5 py-2.5 text-[13px] font-semibold transition-all duration-300 ${activeCountry === country
                                             ? "border-[#E9A93B] bg-[#E9A93B] !text-[#0B1F33]"
                                             : "border-[#E9E1D5] bg-white !text-slate-600"
-                                        }`}
-                                >
-                                    {country}
-                                </button>
-                            ))}
+                                            }`}
+                                    >
+                                        {country}
+                                    </button>
+                                ))}
                         </div>
                     )}
 

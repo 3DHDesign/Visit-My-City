@@ -9,12 +9,14 @@ import TravelPathsSection from "../components/home/TravelPathsSection";
 // import TravelServicesSection from "../components/home/TravelServicesSection";
 import VmcMomentsSection from "../components/home/VmcMomentsSection";
 import WelcomeSriLankaSection from "../components/home/WelcomeSriLankaSection";
+import WellnessSection from "../components/home/WellnessSection";
 // import WhyChooseSection from "../components/home/WhyChooseSection";
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <WellnessSection />
       <WelcomeSriLankaSection />
       <VmcMomentsSection/>
       <TravelPathsSection />
