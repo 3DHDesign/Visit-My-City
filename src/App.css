@@ -395,3 +395,44 @@ a {
       animation: none !important;
   }
 }
+
+/* =========================================
+   TESTIMONIAL SLIDER
+========================================= */
+
+.testimonial-slider .slick-track {
+  display: flex !important;
+}
+
+.testimonial-slider .slick-slide {
+  height: auto !important;
+}
+
+.testimonial-slider .slick-slide > div {
+  height: 100%;
+}
+
+@media (max-width: 639px) {
+  .testimonial-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .testimonial-slider .slick-list {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .testimonial-slider .slick-track {
+    display: flex !important;
+  }
+
+  .testimonial-slider .slick-slide {
+    width: auto;
+    min-width: 0;
+  }
+
+  .testimonial-slider .slick-slide > div {
+    width: 100%;
+  }
+}
