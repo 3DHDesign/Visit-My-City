@@ -30,7 +30,7 @@ const testimonials: Testimonial[] = [
     name: "Mr. Hardik Verma",
     role: "Kundan Verma Family",
     review:
-      "We had a wonderful family holiday in Sri Lanka. The trip was well organized, the transport was comfortable, and we enjoyed visiting so many beautiful places together. It was a very memorable experience for all of us.",
+      "We had a wonderful family holiday in Sri Lanka.The trip was well organized, the transport was comfortable,It was a very memorable experience for all of us.",
     image: "/images/testimonials/2.png",
   },
   {

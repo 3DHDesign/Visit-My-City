@@ -68,7 +68,7 @@ const Footer = () => {
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <p className="text-[12px] font-bold uppercase tracking-[0.22em] !text-[#E9A93B]">
-                Visit My City
+                Visit My City 
               </p>
 
               <h2 className="mt-4 max-w-[800px] text-[32px] font-bold leading-tight !text-white md:text-[44px]">
@@ -97,7 +97,7 @@ const Footer = () => {
             </Link>
 
             <p className="mt-6 max-w-[340px] text-[15px] leading-8 !text-white/65">
-              Visit My City offers curated inbound Sri Lanka journeys and
+              Visit My City (PVT ) Ltd offers curated inbound Sri Lanka journeys and
               outbound world travel packages with complete travel planning,
               destination expertise, and trusted support.
             </p>
@@ -259,7 +259,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col gap-4 py-7 text-center md:flex-row md:items-center md:justify-between md:text-left">
           <p className="text-[13px] !text-white/45">
-            © {new Date().getFullYear()} Visit My City. All rights reserved.
+            © {new Date().getFullYear()} Visit My City (PVT ) Ltd. All rights reserved.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 md:justify-end">

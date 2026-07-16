@@ -555,6 +555,25 @@ const galleryImages: GalleryImage[] = [
         type: "Outbound",
         country: "Indonesia",
     },
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia6.jpeg",
+        alt: "Visit My City travelers enjoying a scenic mountain adventure in Indonesia",
+        type: "Outbound",
+        country: "Indonesia",
+    },
+     
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia8.jpeg",
+        alt: "Visit My City travelers enjoying a parasailing adventure in Indonesia",
+        type: "Outbound",
+        country: "Indonesia",
+    },
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia9.jpeg",
+        alt: "Visit My City travelers enjoying an outdoor sightseeing tour in Indonesia",
+        type: "Outbound",
+        country: "Indonesia",
+    },
 
     // =========================
     // OUTBOUND - KOH SAMUI ISLAND
