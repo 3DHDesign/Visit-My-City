@@ -243,7 +243,7 @@ const FinalCTASection = () => {
                 {/* Address */}
                 <div className="mt-4 rounded-[20px] bg-[#0B1F33] p-4 sm:mt-5 sm:rounded-[24px] sm:p-5">
                   <p className="text-[10px] font-bold uppercase tracking-[0.16em] !text-[#E9A93B] sm:text-[11px] sm:tracking-[0.18em]">
-                    Visit My City Travels
+                    Visit My City (PVT ) Ltd Travels
                   </p>
 
                   <p className="mt-2 text-[13px] leading-6 !text-white/70 sm:mt-3 sm:text-[14px] sm:leading-7">

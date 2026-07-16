@@ -44,7 +44,7 @@ const testimonials: Testimonial[] = [
     name: "Mr. Mazianis",
     role: "Family Traveler",
     review:
-      "We travelled with our daughter and everything was arranged very well. The journey was comfortable, and we always felt supported during the trip. We really enjoyed discovering Sri Lanka as a family.",
+      "We travelled with our daughter and everything was arranged very well. The journey was comfortable We really enjoyed discovering Sri Lanka as a family.",
     image: "/images/testimonials/4.png",
   },
   {
@@ -72,7 +72,7 @@ const testimonials: Testimonial[] = [
     name: "Mrs. Eirini",
     role: "Family Traveler",
     review:
-      "We loved our time in Sri Lanka. The country is beautiful, the people were very kind, and every part of the journey gave us something different to enjoy. It was a lovely family experience and we will remember it for a long time.",
+      "We loved our time in Sri Lanka. The country is beautiful, the people were very kind.It was a lovely family experience and we will remember it for a long time.",
     image: "/images/testimonials/8.png",
   },
 ];
