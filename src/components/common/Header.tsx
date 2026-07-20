@@ -16,6 +16,18 @@ const NAV = {
     label: "OUTBOUND PACKAGES",
     links: [
       {
+        name: "Malaysia Packages",
+        icon: "🌴",
+        desc: "City breaks & tropical stays",
+        path: "/explore-the-world/malaysia",
+      },
+      {
+        name: "Singapore Packages",
+        icon: "🦁",
+        desc: "Modern city experiences",
+        path: "/explore-the-world/singapore",
+      },
+      {
         name: "Dubai Packages",
         icon: "🌆",
         desc: "City luxury & desert escapes",
@@ -33,18 +45,7 @@ const NAV = {
         desc: "Temples, islands & nightlife",
         path: "/explore-the-world/thailand",
       },
-      {
-        name: "Malaysia Packages",
-        icon: "🌴",
-        desc: "City breaks & tropical stays",
-        path: "/explore-the-world/malaysia",
-      },
-      {
-        name: "Singapore Packages",
-        icon: "🦁",
-        desc: "Modern city experiences",
-        path: "/explore-the-world/singapore",
-      },
+     
       {
         name: "India Packages",
         icon: "🕌",

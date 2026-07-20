@@ -574,6 +574,30 @@ const galleryImages: GalleryImage[] = [
         type: "Outbound",
         country: "Indonesia",
     },
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia10.jpg",
+        alt: "Visit My City travelers experiencing an adventurous sky activity in Indonesia",
+        type: "Outbound",
+        country: "Indonesia",
+    },
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia11.jpg",
+        alt: "Visit My City travelers enjoying a thrilling river adventure in Indonesia",
+        type: "Outbound",
+        country: "Indonesia",
+    },
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia12.jpg",
+        alt: "Visit My City travelers exploring traditional Indonesian architecture",
+        type: "Outbound",
+        country: "Indonesia",
+    },
+    {
+        src: "/images/gallery/outbound/indonesia/indonesia13.jpg",
+        alt: "Visit My City travelers exploring a beautiful natural attraction in Indonesia",
+        type: "Outbound",
+        country: "Indonesia",
+    },
 
     // =========================
     // OUTBOUND - KOH SAMUI ISLAND
