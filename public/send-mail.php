@@ -910,12 +910,7 @@ try {
     );
 }
 
-/*
-|--------------------------------------------------------------------------
-| Success response
-|--------------------------------------------------------------------------
-*/
-
+ 
 sendJsonResponse(
     true,
     'Thank you! Your inquiry has been sent successfully. We will get back to you soon.'
