@@ -1,4 +1,35 @@
-       - name: Build Vite website
+ name: Build and Deploy Visit My City
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy website
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Vite website
         run: npm run build
 
       - name: Create secure SMTP configuration
@@ -11,7 +42,9 @@
           const password = process.env.SMTP_PASSWORD;
 
           if (!password) {
-            throw new Error("SMTP_PASSWORD GitHub secret is missing.");
+            throw new Error(
+              "SMTP_PASSWORD GitHub secret is missing."
+            );
           }
 
           const encodedPassword = Buffer
