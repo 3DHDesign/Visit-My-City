@@ -234,7 +234,7 @@ if (
 
 $smtpUsername = 'pasindu@3dhdesign.com';
 
-$smtpPassword = 'Hellopasi@123';
+$smtpPassword = '*****';
 
 $adminEmail = 'pasindulaksara@gmail.com';
 
