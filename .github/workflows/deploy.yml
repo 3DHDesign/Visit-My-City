@@ -1,4 +1,4 @@
- name: Build and Deploy Visit My City
+name: Build and Deploy Visit My City
 
 on:
   push:
