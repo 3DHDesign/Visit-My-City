@@ -1,36 +1,39 @@
-name: Build and Deploy Visit My City
-
-on:
-  push:
-    branches:
-      - main
-
-  workflow_dispatch:
-
-permissions:
-  contents: read
-
-jobs:
-  build-and-deploy:
-    name: Build and deploy website
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: "22"
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Vite website
+       - name: Build Vite website
         run: npm run build
+
+      - name: Create secure SMTP configuration
+        env:
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          node <<'NODE'
+          const fs = require("fs");
+
+          const password = process.env.SMTP_PASSWORD;
+
+          if (!password) {
+            throw new Error("SMTP_PASSWORD GitHub secret is missing.");
+          }
+
+          const encodedPassword = Buffer
+            .from(password, "utf8")
+            .toString("base64");
+
+          const phpConfig = `<?php
+
+          declare(strict_types=1);
+
+          return [
+              'username' => 'pasindu@3dhdesign.com',
+              'password' => base64_decode('${encodedPassword}', true),
+          ];
+          `;
+
+          fs.writeFileSync(
+            "dist/smtp-config.php",
+            phpConfig,
+            "utf8"
+          );
+          NODE
 
       - name: Deploy dist folder through FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
@@ -38,8 +41,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # protocol: ftps
-          # port: 21
           local-dir: ./dist/
           server-dir: ./
           log-level: standard

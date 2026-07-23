@@ -232,15 +232,47 @@ if (
 |
 */
 
-$smtpUsername = 'pasindu@3dhdesign.com';
+$configPath = __DIR__ . '/smtp-config.php';
 
+<<<<<<< HEAD
 $smtpPassword = '*****';
+=======
+if (!is_file($configPath)) {
+    sendJsonResponse(
+        false,
+        'SMTP configuration file was not found.',
+        500
+    );
+}
+
+$smtpConfig = require $configPath;
+
+$smtpUsername = trim(
+    (string) ($smtpConfig['username'] ?? '')
+);
+
+$smtpPassword = (string) (
+    $smtpConfig['password'] ?? ''
+);
+
+if (
+    $smtpUsername === '' ||
+    $smtpPassword === ''
+) {
+    sendJsonResponse(
+        false,
+        'SMTP configuration is incomplete.',
+        500
+    );
+}
+>>>>>>> 3ad5b2e (Secure SMTP configuration for contact form)
 
 $adminEmail = 'pasindulaksara@gmail.com';
-
 $vmcEmail = 'info@visitmycity.lk';
-
 $senderName = 'Visit My City';
+
+
+ 
 
 if (
     $smtpPassword === '' ||
