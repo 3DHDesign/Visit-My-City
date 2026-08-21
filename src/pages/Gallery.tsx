@@ -774,24 +774,25 @@ const Gallery = () => {
         <main className="bg-[#FCFCFA]">
             {/* Hero */}
             <section className="relative overflow-hidden pb-16 pt-24 md:pb-20 md:pt-28">
-                <div className="absolute inset-0 bg-[#0B1F33]">
-                    {/* Blurred background fills the full hero */}
-                    <img
-                        src="/images/herogallery.jpg"
-                        alt=""
-                        aria-hidden="true"
-                        className="absolute inset-0 h-full w-full scale-110 object-cover blur-xl"
-                    />
+            <div className="absolute inset-0 bg-[#0B1F33]">
+    {/* Blurred background */}
+    <img
+        src="/images/gallery.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full scale-110 object-cover blur-xl"
+    />
 
-                    <div className="absolute inset-0 bg-[#071A2C]/45" />
+    {/* Complete collage */}
+    <img
+        src="/images/gallery.png"
+        alt="Visit My City travel gallery experiences"
+        className="absolute inset-0 h-full w-full object-contain"
+    />
 
-                    {/* Complete collage without cropping */}
-                    <img
-                        src="/images/herogallery.jpg"
-                        alt="Visit My City travel gallery experiences"
-                        className="absolute inset-0 h-full w-full object-contain"
-                    />
-                </div>
+    {/* Dark overlay MUST be above the image */}
+    <div className="absolute inset-0 bg-gradient-to-b from-[#071A2C]/45 via-[#071A2C]/60 to-[#071A2C]/50" />
+</div>
 
                 <div className="container-wide relative z-10">
                     <div className="mx-auto max-w-4xl text-center">

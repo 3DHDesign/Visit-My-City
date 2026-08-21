@@ -61,7 +61,7 @@ const ContactMap = () => {
             {/* Map */}
             <div className="relative min-h-[380px] overflow-hidden bg-[#0B1F33] lg:min-h-[500px]">
               <iframe
-                title="Visit My City Travels Google Map"
+                title="Visit My City Travels  Google Map"
                 src={mapEmbedUrl}
                 className="absolute inset-0 h-full w-full border-0"
                 loading="lazy"
