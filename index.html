@@ -1,77 +1,219 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- =========================================
+         01. BASIC CONFIGURATION
+    ========================================== -->
+
     <meta charset="UTF-8" />
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Visit My City | Sri Lanka & World Travel</title>
-
     <meta
-      name="description"
-      content="Visit My City helps travelers plan Sri Lanka journeys and overseas holidays with flights, hotels, transfers, guides, and complete travel support."
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
     />
 
-    <meta
-      name="keywords"
-      content="Visit My City, Sri Lanka travel, Sri Lanka tours, travel agency Sri Lanka, overseas holidays, Dubai travel, Malaysia travel, Sri Lanka travel planner"
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon.png"
     />
 
     <meta name="theme-color" content="#0B1F33" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Visit My City | Sri Lanka & World Travel" />
+
+    <!-- =========================================
+         02. SEARCH ENGINE OPTIMIZATION
+    ========================================== -->
+
+    <title>
+      Sri Lanka Private Tours & Tailor-Made Holidays | Visit My City
+    </title>
+
+    <meta
+      name="description"
+      content="Explore Sri Lanka with Visit My City. Discover tailor-made private tours, honeymoon packages, family holidays, wildlife experiences and airport transfers."
+    />
+
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1"
+    />
+
+
+    <!-- =========================================
+         03. OPEN GRAPH
+         Facebook, WhatsApp, LinkedIn
+    ========================================== -->
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Visit My City"
+    />
+
+    <meta
+      property="og:locale"
+      content="en_US"
+    />
+
+    <meta
+      property="og:title"
+      content="Sri Lanka Private Tours & Tailor-Made Holidays | Visit My City"
+    />
+
     <meta
       property="og:description"
-      content="Plan memorable Sri Lanka journeys and overseas holidays with Visit My City."
+      content="Discover Sri Lanka your way. Explore personalized tours, cultural experiences, wildlife adventures and memorable holidays with Visit My City."
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/images/logo.png" />
 
-    <!-- Tab title change -->
-    <title>Visit My City | Sri Lanka & World Travel</title>
 
-    <script>
-      const defaultTitle = "Visit My City | Sri Lanka & World Travel";
-    
-      const awayTitles = [
-        "Don’t miss your next journey ✈️",
-        "Your dream trip is waiting 🌍",
-        "Come back to Visit My City 🌴",
-        "Plan your next escape today ✨",
-      ];
-    
-      let titleInterval;
-      let titleIndex = 0;
-    
-      document.addEventListener("visibilitychange", () => {
-        if (document.hidden) {
-          titleInterval = setInterval(() => {
-            document.title = awayTitles[titleIndex];
-            titleIndex = (titleIndex + 1) % awayTitles.length;
-          }, 1200);
-        } else {
-          clearInterval(titleInterval);
-          titleIndex = 0;
-          document.title = defaultTitle;
+    <!-- =========================================
+         04. X / TWITTER
+    ========================================== -->
+
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+
+    <meta
+      name="twitter:title"
+      content="Sri Lanka Private Tours | Visit My City"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Explore Sri Lanka with tailor-made tours, private journeys and personalized holiday experiences."
+    />
+
+
+    <!-- =========================================
+         05. STRUCTURED DATA
+         BUSINESS IDENTITY + WEBSITE
+
+         SEO / AI DISCOVERABILITY
+    ========================================== -->
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TravelAgency",
+
+          "@id": "https://www.visitmycity.lk/#travelagency",
+
+          "name": "Visit My City",
+
+          "url": "https://www.visitmycity.lk/",
+
+          "description": "Visit My City is a Sri Lankan travel company arranging tailor-made Sri Lanka tours, private holidays, family journeys, honeymoon experiences, airport transfers and international holidays.",
+
+          "telephone": "+94114600900",
+
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "No. 12, Sri Dhamma Mawatha",
+            "addressLocality": "Colombo",
+            "postalCode": "01000",
+            "addressCountry": "LK"
+          },
+
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+94766192447",
+            "contactType": "customer service"
+          },
+
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+
+            "name": "Visit My City Travel Services",
+
+            "itemListElement": [
+              {
+                "@type": "OfferCatalog",
+                "name": "Sri Lanka Private Tours"
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Tailor-Made Sri Lanka Holidays"
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Family and Group Tours"
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Honeymoon Holidays"
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Airport Transfers"
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Worldwide Holiday Packages"
+              }
+            ]
+          }
+        },
+
+        {
+          "@type": "WebSite",
+
+          "@id": "https://www.visitmycity.lk/#website",
+
+          "name": "Visit My City",
+
+          "url": "https://www.visitmycity.lk/",
+
+          "description": "Discover Sri Lanka with personalized tours and tailor-made holidays. Explore worldwide travel experiences with Visit My City.",
+
+          "inLanguage": "en",
+
+          "publisher": {
+            "@id": "https://www.visitmycity.lk/#travelagency"
+          }
         }
-      });
+      ]
+    }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0QFD18F4C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-X0QFD18F4C');
-</script>
+    <!-- =========================================
+         06. GOOGLE ANALYTICS 4
+    ========================================== -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X0QFD18F4C"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "G-X0QFD18F4C");
+    </script>
+
   </head>
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <script
+      type="module"
+      src="/src/main.tsx"
+    ></script>
   </body>
 </html>
